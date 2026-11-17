@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "kappa": 0.0,
+      "sync": 27.771485974826653,
+      "independent": 37.676306730261345,
+      "joint_gpi": 30.325165805394917,
+      "attention-ddqn": 37.527468558178256,
+      "attention-ppo": 37.58216986372351,
+      "unconstrained-DP": 37.67692693625564,
+      "scratch-best": 37.651352006764206,
+      "ranking": [
+        "unconstrained-DP",
+        "independent",
+        "scratch-best",
+        "attention-ppo",
+        "attention-ddqn",
+        "joint_gpi",
+        "sync"
+      ]
+    },
+    {
+      "kappa": 0.25,
+      "sync": 27.756460609202303,
+      "independent": 32.228718230458426,
+      "joint_gpi": 29.698033451269954,
+      "attention-ddqn": 33.064575842987665,
+      "attention-ppo": 33.32383488903765,
+      "unconstrained-DP": 34.495497963628104,
+      "scratch-best": 33.79300993034074,
+      "ranking": [
+        "unconstrained-DP",
+        "scratch-best",
+        "attention-ppo",
+        "attention-ddqn",
+        "independent",
+        "joint_gpi",
+        "sync"
+      ]
+    },
+    {
+      "kappa": 0.5,
+      "sync": 27.74319485018998,
+      "independent": 26.913689652077974,
+      "joint_gpi": 29.646688625288625,
+      "attention-ddqn": 33.093159934391096,
+      "attention-ppo": 33.32178656411048,
+      "unconstrained-DP": 34.482272905263144,
+      "scratch-best": 34.337352293737744,
+      "ranking": [
+        "unconstrained-DP",
+        "scratch-best",
+        "attention-ppo",
+        "attention-ddqn",
+        "joint_gpi",
+        "sync",
+        "independent"
+      ]
+    },
+    {
+      "kappa": 0.75,
+      "sync": 27.73066206594713,
+      "independent": 23.360640289718837,
+      "joint_gpi": 29.646572330868025,
+      "attention-ddqn": 32.57767669825326,
+      "attention-ppo": 32.9748466961377,
+      "unconstrained-DP": 34.482272905263144,
+      "scratch-best": 34.33707339561452,
+      "ranking": [
+        "unconstrained-DP",
+        "scratch-best",
+        "attention-ppo",
+        "attention-ddqn",
+        "joint_gpi",
+        "sync",
+        "independent"
+      ]
+    },
+    {
+      "kappa": 1.0,
+      "sync": 27.720199966761044,
+      "independent": 20.71209843102102,
+      "joint_gpi": 29.646572330868025,
+      "attention-ddqn": 32.265432808270155,
+      "attention-ppo": 32.74934017723739,
+      "unconstrained-DP": 34.482272905263144,
+      "scratch-best": 34.32405700214399,
+      "ranking": [
+        "unconstrained-DP",
+        "scratch-best",
+        "attention-ppo",
+        "attention-ddqn",
+        "joint_gpi",
+        "sync",
+        "independent"
+      ]
+    }
+  ]
+}

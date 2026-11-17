@@ -1,5 +1,7 @@
 # Toy experiment — controlled SF composition under coupling
 
+> **Current implementation (2026-11-17):** Use [../REPRODUCING.md](../REPRODUCING.md) and `python run_toy.py --help`. The text below describes the historical release. Current SFs include the blocking penalty; training and independent testing are separate, and old cached figures are not current results.
+
 A small multi-agent grid world (SFWorld) that isolates, in the smallest
 controlled form, when per-agent successor-feature composition is safe and when
 it is not. It reproduces the paper's controlled claims and produces the three

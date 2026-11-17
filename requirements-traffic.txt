@@ -1,0 +1,5 @@
+-r requirements.txt
+# Versions recorded for the server traffic experiment.
+sumo-rl==1.4.5
+traci==1.23.1
+sumolib==1.23.1

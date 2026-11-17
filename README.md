@@ -1,5 +1,7 @@
 # MA-USFA
 
+> **Current implementation (2026-11-17):** The repaired code uses frozen source actions, a task-conditioned vector-SF predictor and an attention-DDQN source-entry selector. Start with [REPRODUCING.md](REPRODUCING.md). The original release description below is retained as historical documentation; its commands, cached numbers and shipped SF checkpoint do not describe the current experiment pipeline.
+
 **Paper:** "Is Per-Agent Policy Composition Safe? Rethinking Successor-Feature Transfer in Cooperative Multi-Agent Reinforcement Learning"(under review)
 
 <img src="./img/main.png" style="zoom:22%;" />

@@ -1,0 +1,212 @@
+{
+  "purpose": "Self-contained current traffic implementation; source paths are provenance only, never runtime dependencies.",
+  "files": {
+    "tsc_repaired/__init__.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/__init__.py",
+      "upstream_sha256": "0b77bfbdb0c01b937a7a316e4d02173a5a56d542b7e367b5b3eb52df8c770955",
+      "release_sha256": "0b77bfbdb0c01b937a7a316e4d02173a5a56d542b7e367b5b3eb52df8c770955"
+    },
+    "tsc_repaired/config.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/config.py",
+      "upstream_sha256": "10980f614ae096fe2ff11d82a1f69596420b8c4b07e63c9bb6d4088b1da41858",
+      "release_sha256": "10980f614ae096fe2ff11d82a1f69596420b8c4b07e63c9bb6d4088b1da41858"
+    },
+    "tsc_repaired/features.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/features.py",
+      "upstream_sha256": "84b245eca093fe2e4a77292dff8f829fbe78ebd88e8fdf52994357a8c9a0a656",
+      "release_sha256": "84b245eca093fe2e4a77292dff8f829fbe78ebd88e8fdf52994357a8c9a0a656"
+    },
+    "tsc_repaired/scenario.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/scenario.py",
+      "upstream_sha256": "593690a11596b9e681188092bedfdd5d31a620d998cc406d9e544861cc60b835",
+      "release_sha256": "593690a11596b9e681188092bedfdd5d31a620d998cc406d9e544861cc60b835"
+    },
+    "tsc_repaired/source_policy.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/source_policy.py",
+      "upstream_sha256": "d7606a8afa33b08d5877c98448e8a706eb8f071d28eaf404f8b5a88d3dee6791",
+      "release_sha256": "d7606a8afa33b08d5877c98448e8a706eb8f071d28eaf404f8b5a88d3dee6791"
+    },
+    "tsc_repaired/source_library.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/source_library.py",
+      "upstream_sha256": "853b7cafd3b01cfb6d6e2d77b869da0beb3b5aed872f5fceeba8cfbaed609089",
+      "release_sha256": "853b7cafd3b01cfb6d6e2d77b869da0beb3b5aed872f5fceeba8cfbaed609089"
+    },
+    "tsc_repaired/conditional_sf.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/conditional_sf.py",
+      "upstream_sha256": "ef804332d3ba2f66ec9e3fa87e9521f57ea5753c87eed90bcf912a6a63136f0e",
+      "release_sha256": "ef804332d3ba2f66ec9e3fa87e9521f57ea5753c87eed90bcf912a6a63136f0e"
+    },
+    "tsc_repaired/topology.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/topology.py",
+      "upstream_sha256": "bf6634d15f43d606889269d08888b2650bb1d59543255fd58bf5f09838fcd387",
+      "release_sha256": "bf6634d15f43d606889269d08888b2650bb1d59543255fd58bf5f09838fcd387"
+    },
+    "tsc_repaired/task_protocol_v2.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/task_protocol_v2.py",
+      "upstream_sha256": "8f623f8bcb8da7653fe5519352b0b6f0f65f9971e3d72e8d14d98c6c897a2dd9",
+      "release_sha256": "8f623f8bcb8da7653fe5519352b0b6f0f65f9971e3d72e8d14d98c6c897a2dd9"
+    },
+    "tsc_repaired/task_sf.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/task_sf.py",
+      "upstream_sha256": "041cf991530d4be26fd3587751c526938e229f6bea1b3a11bc9c68c78b04a27f",
+      "release_sha256": "041cf991530d4be26fd3587751c526938e229f6bea1b3a11bc9c68c78b04a27f"
+    },
+    "tsc_repaired/task_selector.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/task_selector.py",
+      "upstream_sha256": "bbf4ffe27a96a785ebc6139177f5e6a866f05736381964256b2ab6fc0d974fce",
+      "release_sha256": "bbf4ffe27a96a785ebc6139177f5e6a866f05736381964256b2ab6fc0d974fce"
+    },
+    "tsc_repaired/collect_task_reference.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/collect_task_reference.py",
+      "upstream_sha256": "a58139117f565d6da93c12e244db60c03b36816852ddff1587e0d618b0e16511",
+      "release_sha256": "a58139117f565d6da93c12e244db60c03b36816852ddff1587e0d618b0e16511"
+    },
+    "tsc_repaired/train_task_sf.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/train_task_sf.py",
+      "upstream_sha256": "44f4771ef25966d9d7b46800d9f2647045f95c5f2fcf1f903416679580457dce",
+      "release_sha256": "44f4771ef25966d9d7b46800d9f2647045f95c5f2fcf1f903416679580457dce"
+    },
+    "tsc_repaired/train_sources_v2.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/train_sources_v2.py",
+      "upstream_sha256": "0495fb99ed5fb29462bfccda9eda6ae2a783edcca54d4961409149bc33bf44d9",
+      "release_sha256": "79931f9ffb373f0200012e40bd5c6ab23674fc9229cf77f522e2007ec5e69649"
+    },
+    "tsc_repaired/traffic_runtime.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/traffic_runtime.py",
+      "upstream_sha256": "7c05449295d84de52ecc4a571c48bd20a52d9837598e32cd595200fb7ab9c06d",
+      "release_sha256": "3302a173b115cb91dddde504ce2ff5aa24ffaeb3df43a6fcbacf089e29fe0609"
+    },
+    "tsc_repaired/train_online_upper.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/train_online_upper.py",
+      "upstream_sha256": "7eb4dfe709d5717fbdf16534cfbf9846fd8edfe499ad1ce9d90bd9b977173a33",
+      "release_sha256": "7eb4dfe709d5717fbdf16534cfbf9846fd8edfe499ad1ce9d90bd9b977173a33"
+    },
+    "tsc_repaired/rollout_evaluate.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/rollout_evaluate.py",
+      "upstream_sha256": "8bd41e1fde82037e66afb80dcb2ef28ba09223bbb022c6225bb047b18adc629f",
+      "release_sha256": "8bd41e1fde82037e66afb80dcb2ef28ba09223bbb022c6225bb047b18adc629f"
+    },
+    "tsc_repaired/resources.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/resources.py",
+      "upstream_sha256": "5acb100db9107ac11b86aaee4e04178071ff1bed83985a62b8449644545a01ee",
+      "release_sha256": "5acb100db9107ac11b86aaee4e04178071ff1bed83985a62b8449644545a01ee"
+    },
+    "tsc_repaired/test_source_sf.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_source_sf.py",
+      "upstream_sha256": "72a95cbfbec10761ea043eae8d3f96c368652627aac208c8af34bc9175a86de5",
+      "release_sha256": "ec6a591be3727766ea73a7d79574cf68760bab78b298c8607ad7cea258174cd7"
+    },
+    "tsc_repaired/test_traffic_runtime.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_traffic_runtime.py",
+      "upstream_sha256": "b9bb16947baefcbc0db010de5e6424c0ff0c8a3a99fd109283d441112741f68a",
+      "release_sha256": "2a97c75aead62936f55d6d544ceec53fd8b44551cdbf878d7fc3a2c8e8b0b73a"
+    },
+    "tsc_repaired/test_rollout_evaluate.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_rollout_evaluate.py",
+      "upstream_sha256": "3af4f5286223b969505498a924174f97e1a2f9b1ffd8e8d1e476d620a710c338",
+      "release_sha256": "3af4f5286223b969505498a924174f97e1a2f9b1ffd8e8d1e476d620a710c338"
+    },
+    "tsc_repaired/test_task_selector.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_task_selector.py",
+      "upstream_sha256": "0d6b42f4b4cb9c8994bda77af1ad77c0cc77e02f97a19772de4277e2b0363747",
+      "release_sha256": "0d6b42f4b4cb9c8994bda77af1ad77c0cc77e02f97a19772de4277e2b0363747"
+    },
+    "tsc_repaired/test_task_sf.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_task_sf.py",
+      "upstream_sha256": "5816e23b9ebc62cc0b3c3b6177b36e3504f207c809c284164c2dadf847f181ef",
+      "release_sha256": "5816e23b9ebc62cc0b3c3b6177b36e3504f207c809c284164c2dadf847f181ef"
+    },
+    "tsc_repaired/test_task_protocol_v2.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_task_protocol_v2.py",
+      "upstream_sha256": "ecd0d8c193ddb5aa21376f5299f1755b1cf84b57ea82396ce80f06b70728bc31",
+      "release_sha256": "ecd0d8c193ddb5aa21376f5299f1755b1cf84b57ea82396ce80f06b70728bc31"
+    },
+    "tsc_repaired/test_train_sources_v2.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_train_sources_v2.py",
+      "upstream_sha256": "3583c13e576219bcb0698c020a480e38ba206e4a280a63ad71ad20bf277f8c2c",
+      "release_sha256": "3516c7481971b7c7ad1e9ab6cdda88a3c5e9693aff6c1b554e58a906c4770efc"
+    },
+    "tsc_repaired/test_resources_v2.py": {
+      "source": "rebuttal_20261106/server/tsc_repaired/test_resources_v2.py",
+      "upstream_sha256": "d44488c246b10c4f51bd3b1085e379e676a968a50a774aad4bb1dc3d12b8529a",
+      "release_sha256": "d44488c246b10c4f51bd3b1085e379e676a968a50a774aad4bb1dc3d12b8529a"
+    },
+    "mixer_ablation/__init__.py": {
+      "source": "rebuttal_20261106/server/mixer_ablation/__init__.py",
+      "upstream_sha256": "b018ed956356d10cde937dd53a643f0ff6dfd82f0cbe21b532df36a30d5f0e38",
+      "release_sha256": "b018ed956356d10cde937dd53a643f0ff6dfd82f0cbe21b532df36a30d5f0e38"
+    },
+    "mixer_ablation/selector.py": {
+      "source": "rebuttal_20261106/server/mixer_ablation/selector.py",
+      "upstream_sha256": "34c6db9792d756bd1e03627a6d5afaadc219448e5a2ed9abe280b4cc5c2551c3",
+      "release_sha256": "34c6db9792d756bd1e03627a6d5afaadc219448e5a2ed9abe280b4cc5c2551c3"
+    },
+    "mixer_ablation/evaluate.py": {
+      "source": "rebuttal_20261106/server/mixer_ablation/evaluate.py",
+      "upstream_sha256": "c76c903c86389163fab8116994691b3f9f859449c2ea984d21276c0f399098b6",
+      "release_sha256": "c76c903c86389163fab8116994691b3f9f859449c2ea984d21276c0f399098b6"
+    },
+    "mixer_ablation/train_upper.py": {
+      "source": "rebuttal_20261106/server/mixer_ablation/train_upper.py",
+      "upstream_sha256": "80a136bc0fc2d7436c5e0837c29bba025a2daada9b641678985ca0a3aba44fab",
+      "release_sha256": "80a136bc0fc2d7436c5e0837c29bba025a2daada9b641678985ca0a3aba44fab"
+    },
+    "mixer_ablation/test_selector_training.py": {
+      "source": "rebuttal_20261106/server/mixer_ablation/test_selector_training.py",
+      "upstream_sha256": "b5ad0505b5700f2a5f6f476234a97dd2c52d3de0a7b2f1344b64ba82ab1693c0",
+      "release_sha256": "b5ad0505b5700f2a5f6f476234a97dd2c52d3de0a7b2f1344b64ba82ab1693c0"
+    },
+    "mixer_ablation/test_evaluate.py": {
+      "source": "rebuttal_20261106/server/mixer_ablation/test_evaluate.py",
+      "upstream_sha256": "a8d57dfb32ff0cbaf9bedfc5bc41b8093d97824e88504e4718a3a22c9d963e33",
+      "release_sha256": "a8d57dfb32ff0cbaf9bedfc5bc41b8093d97824e88504e4718a3a22c9d963e33"
+    },
+    "development_followup/__init__.py": {
+      "source": "rebuttal_20261106/server/development_followup/__init__.py",
+      "upstream_sha256": "d945653ce47eec0f67c2d1a5ea3cec3053c24d5e045bd3777ea9338bdd08134a",
+      "release_sha256": "d945653ce47eec0f67c2d1a5ea3cec3053c24d5e045bd3777ea9338bdd08134a"
+    },
+    "development_followup/train_budget.py": {
+      "source": "rebuttal_20261106/server/development_followup/train_budget.py",
+      "upstream_sha256": "c907ea81f6e879ea190eed9fdcf28d85ae358a4255bce2fc9491eb2306d66f85",
+      "release_sha256": "c907ea81f6e879ea190eed9fdcf28d85ae358a4255bce2fc9491eb2306d66f85"
+    },
+    "development_followup/test_train_budget.py": {
+      "source": "rebuttal_20261106/server/development_followup/test_train_budget.py",
+      "upstream_sha256": "4d847987fdb6b2e599badfe506159acc90f8db52a4e4d54decd3163bc2a0edf8",
+      "release_sha256": "4d847987fdb6b2e599badfe506159acc90f8db52a4e4d54decd3163bc2a0edf8"
+    },
+    "paper_aligned_followup/__init__.py": {
+      "source": "rebuttal_20261106/server/paper_aligned_followup/__init__.py",
+      "upstream_sha256": "28a362949b3ea06be4e58823ed8e638f65babc1c0ecfd4418b7b16c80f291251",
+      "release_sha256": "28a362949b3ea06be4e58823ed8e638f65babc1c0ecfd4418b7b16c80f291251"
+    },
+    "paper_aligned_followup/legacy_tasks.py": {
+      "source": "rebuttal_20261106/server/paper_aligned_followup/legacy_tasks.py",
+      "upstream_sha256": "3aba468edc8395a18fd2a73019e892963954fab5a4a6322109412c47203f595b",
+      "release_sha256": "3aba468edc8395a18fd2a73019e892963954fab5a4a6322109412c47203f595b"
+    },
+    "paper_aligned_followup/evaluate.py": {
+      "source": "rebuttal_20261106/server/paper_aligned_followup/evaluate.py",
+      "upstream_sha256": "0d83c4c8f25cacb60044cb27eb07a5b20c56022f0b9be1be457347f23f2424d2",
+      "release_sha256": "0d83c4c8f25cacb60044cb27eb07a5b20c56022f0b9be1be457347f23f2424d2"
+    },
+    "paper_aligned_followup/test_legacy_tasks.py": {
+      "source": "rebuttal_20261106/server/paper_aligned_followup/test_legacy_tasks.py",
+      "upstream_sha256": "b1c3dd36a161b1d2947d594588051e2355d0f75f3ad1ba74a575b6cfcd0ce820",
+      "release_sha256": "b1c3dd36a161b1d2947d594588051e2355d0f75f3ad1ba74a575b6cfcd0ce820"
+    },
+    "paper_aligned_followup/test_evaluate.py": {
+      "source": "rebuttal_20261106/server/paper_aligned_followup/test_evaluate.py",
+      "upstream_sha256": "98d580a0de6d39584305730f91c876b575db1ac0af6b81b0796f721d447b91af",
+      "release_sha256": "98d580a0de6d39584305730f91c876b575db1ac0af6b81b0796f721d447b91af"
+    }
+  },
+  "release_fixes": {
+    "tsc_repaired/traffic_runtime.py": "Verify optional source node/feature identity and include scene file hashes in frozen-artifact audit. These provenance checks do not change neural decisions.",
+    "tsc_repaired/test_traffic_runtime.py": "Regression tests for source identity and scenario mutation.",
+    "tsc_repaired/test_source_sf.py": "Self-contained command in docstring.",
+    "tsc_repaired/train_sources_v2.py": "Restore the evaluated V1 source recipe: per-node vanilla DQN targets and target copy every 100 episodes. Retain bound scene/node/feature metadata, explicit seeds, error cleanup, and terminal/missing-reward checks. The upper remains team DDQN.",
+    "tsc_repaired/test_train_sources_v2.py": "Test local reward-vector DQN targets, episode-based target copies and bound source provenance."
+  }
+}

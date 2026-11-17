@@ -1,5 +1,7 @@
 # Traffic-signal-control experiment — Manhattan 28×7
 
+> **Current implementation (2026-11-17):** Use [CURRENT_RUN_GUIDE.md](CURRENT_RUN_GUIDE.md) and `python run.py --help`. The text below describes the historical release. The current pipeline trains scene-bound frozen sources and a shared attention-DDQN selector; it never loads `checkpoints/sf_psi.pth` or fits on the evaluation targets.
+
 The large-scale instantiation of the paper's claims: 196 traffic-signal agents
 on a Manhattan 28×7 grid, built on top of an IDDQN reference. Where the toy uses
 a synthetic coupling dial, this network has **intrinsic** coupling — 196

@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "isolated_from_research_parent": true,
+  "true_sumo_started": false,
+  "cases": [
+    {
+      "name": "evidence",
+      "exit_code": 0,
+      "seconds": 0.10161816599429585,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"evidence_files\": 144,\n  \"test_rows\": 4000,\n  \"grouped_rows_recomputed\": 220,\n  \"optimizer_updates\": 0,\n  \"scope\": \"Integrity and arithmetic check of recorded evidence; no model training or simulator run\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "toy_tests",
+      "exit_code": 0,
+      "seconds": 2.633960000006482,
+      "stdout_tail": "{\n  \"status\": \"INTERRUPTED\",\n  \"steps\": 40,\n  \"updates\": 0,\n  \"complete\": false\n}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 8, \"updates\": 3, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.004153374989982694}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 16, \"updates\": 7, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.009368416998768225}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 24, \"updates\": 11, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.013942291989224032}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 32, \"updates\": 15, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.01840370800346136}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 8, \"updates\": 3, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.0037577920011244714}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 16, \"updates\": 7, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.008682416984811425}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 8, \"updates\": 3, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.003851999994367361}\n{\"method\": \"task-conditioned-shared-joint-ddqn-v1\", \"steps\": 16, \"updates\": 7, \"validation_mean\": 1.0096029017722208, \"elapsed_seconds\": 0.008763209014432505}\n{\"status\": \"FROZEN\", \"test_accessed\": false}\n",
+      "stderr_tail": "......................................\n----------------------------------------------------------------------\nRan 38 tests in 1.576s\n\nOK\n"
+    },
+    {
+      "name": "traffic_tests",
+      "exit_code": 0,
+      "seconds": 2.8032722909993026,
+      "stdout_tail": "",
+      "stderr_tail": ".....................................................................................\n----------------------------------------------------------------------\nRan 85 tests in 1.651s\n\nOK\n"
+    },
+    {
+      "name": "source_sf_smoke",
+      "exit_code": 0,
+      "seconds": 0.6595327919931151,
+      "stdout_tail": "source/SF contract smoke PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "toy_help",
+      "exit_code": 0,
+      "seconds": 0.6593838749977294,
+      "stdout_tail": "usage: run_toy.py [-h] [--stage {train,freeze,test}] [--output OUTPUT]\n                  [--protocol PROTOCOL] [--kappas KAPPAS [KAPPAS ...]]\n                  [--seeds SEEDS [SEEDS ...]] [--budget BUDGET]\n                  [--lower-steps LOWER_STEPS]\n                  [--optimizer {ddqn,pg,ppo-surrogate}] [--quick]\n                  [--allow-test] [--threads {1,2}] [--max-rss-gib MAX_RSS_GIB]\n                  [--min-free-disk-gib MIN_FREE_DISK_GIB]\n                  [--wall-seconds WALL_SECONDS]\n\nTrain and evaluate the repaired source-entry composer on frozen task splits.\nThe default run uses five coupling levels and three seeds. --quick is an\ninterface smoke run, not evidence for the paper. Test access is a separate,\nexplicit command after checkpoint/code/protocol freezing.\n\noptions:\n  -h, --help            show this help message and exit\n  --stage {train,freeze,test}\n  --output OUTPUT\n  --protocol PROTOCOL\n  --kappas KAPPAS [KAPPAS ...]\n  --seeds SEEDS [SEEDS ...]\n  --budget BUDGET\n  --lower-steps LOWER_STEPS\n  --optimizer {ddqn,pg,ppo-surrogate}\n  --quick\n  --allow-test\n  --threads {1,2}\n  --max-rss-gib MAX_RSS_GIB\n  --min-free-disk-gib MIN_FREE_DISK_GIB\n  --wall-seconds WALL_SECONDS\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "traffic_help",
+      "exit_code": 0,
+      "seconds": 0.03551683301338926,
+      "stdout_tail": "usage: run.py [-h] [--scene-dir SCENE_DIR] [--output OUTPUT]\n              [--stage {prepare,sources,reference,sf,upper,evaluate,all}]\n              [--device DEVICE] [--source-seed SOURCE_SEED]\n              [--upper-seed UPPER_SEED] [--source-episodes SOURCE_EPISODES]\n              [--reference-episodes REFERENCE_EPISODES] [--sf-steps SF_STEPS]\n              [--upper-episodes UPPER_EPISODES] [--replays REPLAYS]\n              [--threads THREADS] [--max-wall-seconds MAX_WALL_SECONDS]\n              [--max-rss-gib MAX_RSS_GIB]\n              [--min-free-disk-gib MIN_FREE_DISK_GIB]\n\nTrain/evaluate the current strict-entry traffic attention-DDQN pipeline.\nRelative CLI paths are resolved from the working directory. This release\ncreates fresh scenario-bound sources; it never uses the historical sf_psi.pth.\nAll expensive stages have hash-checked completion receipts.\n\noptions:\n  -h, --help            show this help message and exit\n  --scene-dir SCENE_DIR\n  --output OUTPUT\n  --stage {prepare,sources,reference,sf,upper,evaluate,all}\n  --device DEVICE\n  --source-seed SOURCE_SEED\n  --upper-seed UPPER_SEED\n  --source-episodes SOURCE_EPISODES\n  --reference-episodes REFERENCE_EPISODES\n  --sf-steps SF_STEPS\n  --upper-episodes UPPER_EPISODES\n  --replays REPLAYS\n  --threads THREADS\n  --max-wall-seconds MAX_WALL_SECONDS\n  --max-rss-gib MAX_RSS_GIB\n  --min-free-disk-gib MIN_FREE_DISK_GIB\n",
+      "stderr_tail": ""
+    }
+  ],
+  "new_full_training_started": false,
+  "unit_test_optimizer_smokes": true
+}

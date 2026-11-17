@@ -1,12 +1,8 @@
-# Toy experiment (release/toy/) needs only these two:
-numpy>=1.23
-matplotlib>=3.5
+# Shared scientific stack for the repaired controlled and traffic code.
+numpy>=1.23,<3
+torch>=2.5,<3
+psutil>=5.9,<8
+# Optional figure regeneration; not used by training or exact evaluation.
+matplotlib>=3.5,<4
 
-# Traffic-signal-control experiment (release/tsc/) additionally needs:
-#   torch>=1.12          # any recent PyTorch; GPU optional
-#   sumo-rl>=1.4         # plus a working SUMO install (https://www.eclipse.org/sumo/)
-#   tqdm>=4.60
-# Uncomment to install the TSC stack:
-# torch>=1.12
-# sumo-rl>=1.4
-# tqdm>=4.60
+# For traffic, also install requirements-traffic.txt and the SUMO executable.

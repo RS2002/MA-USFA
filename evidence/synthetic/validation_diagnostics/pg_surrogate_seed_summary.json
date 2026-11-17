@@ -1,0 +1,1452 @@
+{
+  "0": {
+    "mean": 37.585005495801276,
+    "std": 0.004047174915901468,
+    "group_means": {
+      "distinct": {
+        "mean": 36.205773416846455,
+        "std": 0.02128970002857399
+      },
+      "overlap": {
+        "mean": 38.72438919015067,
+        "std": 0.008415049640231131
+      },
+      "homo": {
+        "mean": 37.94477807270941,
+        "std": 0.0032514966070127447
+      }
+    },
+    "seed_values": {
+      "100": {
+        "mean_return": 37.58216986372351,
+        "group_means": {
+          "distinct": 36.1896691468508,
+          "homo": 37.94784571784022,
+          "overlap": 38.73088667785173
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 35.23600615061595
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 41.93823897709226
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 38.67784158723452
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 35.93929615641813
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.75290055606028
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.717262828001715
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 35.47019597314279
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.875879280175134
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.75662629505226
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.56514994867259
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 37.47841398776049
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 37.346931072690744
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 41.18751765434325
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 37.760744760484265
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 38.91323981138653
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 39.69847278044509
+          }
+        ]
+      },
+      "101": {
+        "mean_return": 37.589640300780076,
+        "group_means": {
+          "distinct": 36.229910970497116,
+          "homo": 37.94136957811963,
+          "overlap": 38.714883446170006
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 35.21010159173359
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 41.93823897709226
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 38.67784158723452
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 35.93929615641813
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.75290055606028
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.72026173516166
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 35.59133095394437
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.875879280175134
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.883950359931816
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.55514293770942
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 37.47841398776049
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 37.346931072690744
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 41.18751765434325
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 37.59264322805752
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 39.02070476121335
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 39.66308997295468
+          }
+        ]
+      },
+      "102": {
+        "mean_return": 37.58320632290024,
+        "group_means": {
+          "distinct": 36.19774013319145,
+          "homo": 37.94511892216839,
+          "overlap": 38.727397446430274
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 35.225098967928645
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 41.93823897709226
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 38.67784158723452
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 35.93929615641813
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.75290055606028
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.72026173516166
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 35.47019597314279
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.875879280175134
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.812060316899434
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.55514293770942
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 37.47841398776049
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 37.346931072690744
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 41.18751765434325
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 37.6323444221287
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 39.02070476121335
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 39.69847278044509
+          }
+        ]
+      }
+    }
+  },
+  "0.25": {
+    "mean": 33.37179031549114,
+    "std": 0.061145132375499386,
+    "group_means": {
+      "distinct": {
+        "mean": 35.93828436675115,
+        "std": 0.05899765920007218
+      },
+      "overlap": {
+        "mean": 32.37938079798522,
+        "std": 0.1223846545571663
+      },
+      "homo": {
+        "mean": 31.01066351486003,
+        "std": 0.17081052291719928
+      }
+    },
+    "seed_values": {
+      "100": {
+        "mean_return": 33.32383488903765,
+        "group_means": {
+          "distinct": 36.0061391058159,
+          "homo": 30.81551925497398,
+          "overlap": 32.3137410949685
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 28.258068775233745
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 33.19220094806355
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.58314956456582
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 29.2286577320328
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.50017159899983
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.5986462172977
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 34.850448916900234
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.7979879660283
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.72297464004207
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.56660529562724
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 29.81467935528383
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 30.85818485207424
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 34.00656862422473
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 30.46843332225519
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.533344814082334
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.20123560189068
+          }
+        ]
+      },
+      "101": {
+        "mean_return": 33.44064491607057,
+        "group_means": {
+          "distinct": 35.899110609801824,
+          "homo": 31.13304034424473,
+          "overlap": 32.52058227022322
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.845577992727122
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 33.12972229123624
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.668415744465996
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.888445348549556
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.31553206514408
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.60145070478485
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 34.71151674709702
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.77186419099659
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.46131214751304
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.53298780327534
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.80975492674411
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 30.802864890884226
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 34.17858387578224
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 30.483779995789984
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.74877580473512
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.09973412740365
+          }
+        ]
+      },
+      "102": {
+        "mean_return": 33.35089114136521,
+        "group_means": {
+          "distinct": 35.909603384635716,
+          "homo": 31.08343094536138,
+          "overlap": 32.30381902876393
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.5384178122592
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 33.15429556554035
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.438739227313974
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 29.202271176331998
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.46786273833622
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.56245841867893
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 34.59662077875754
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.73598336613582
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.576354800321326
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.518340205584465
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.50171658052814
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 30.767000365184057
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 34.08858718931544
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 29.763868696376427
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.69472710392546
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.00701423725409
+          }
+        ]
+      }
+    }
+  },
+  "0.5": {
+    "mean": 33.26571452083053,
+    "std": 0.05198262076106608,
+    "group_means": {
+      "distinct": {
+        "mean": 35.596252414609424,
+        "std": 0.055743974506522534
+      },
+      "overlap": {
+        "mean": 32.42222680908559,
+        "std": 0.05197370050338648
+      },
+      "homo": {
+        "mean": 31.035139247779565,
+        "std": 0.06505660618203256
+      }
+    },
+    "seed_values": {
+      "100": {
+        "mean_return": 33.32178656411048,
+        "group_means": {
+          "distinct": 35.64757756906234,
+          "homo": 31.10703882643315,
+          "overlap": 32.472494050943496
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.83249533513151
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 32.33791042883212
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 33.03427775075757
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 29.223471791011406
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 34.01293539973386
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.45354855794193
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 34.117198473892024
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.638894505495074
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.28930106431068
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.37358741300049
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.597787438882264
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.261444521402048
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.89785743676866
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 30.268099133889706
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.64650009943812
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.163275675280175
+          }
+        ]
+      },
+      "101": {
+        "mean_return": 33.219127560319514,
+        "group_means": {
+          "distinct": 35.536949280252145,
+          "homo": 31.018036207509358,
+          "overlap": 32.368700075593644
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.82618138717758
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 32.49505860932163
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.84348005364359
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.907424779894626
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 33.62604360830009
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.41050656503464
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 34.10780305287845
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.56808216656006
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.235345411567906
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.27391487717178
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.55181516895486
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.117780432896264
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.884750618031646
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 30.02204293482247
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.513113444456806
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.1226978543998
+          }
+        ]
+      },
+      "102": {
+        "mean_return": 33.25622943806158,
+        "group_means": {
+          "distinct": 35.60423039451378,
+          "homo": 30.98034270939619,
+          "overlap": 32.42548630071963
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.79187849484337
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 32.48323249601665
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.79184320022914
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.854416646495608
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 33.967387633579364
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.32669686982578
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 33.96785302510195
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.660258310433974
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.39550461647094
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 37.30768191167064
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.60228802317455
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.277683772650526
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.82898347642938
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 30.199061387818126
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.538435226792075
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.10646591745317
+          }
+        ]
+      }
+    }
+  },
+  "0.75": {
+    "mean": 32.93972988962018,
+    "std": 0.04259849510130659,
+    "group_means": {
+      "distinct": {
+        "mean": 35.14913495240621,
+        "std": 0.10233444211814903
+      },
+      "overlap": {
+        "mean": 32.268655552397355,
+        "std": 0.10812186420866897
+      },
+      "homo": {
+        "mean": 30.632233801275362,
+        "std": 0.12314865761441057
+      }
+    },
+    "seed_values": {
+      "100": {
+        "mean_return": 32.9748466961377,
+        "group_means": {
+          "distinct": 35.17478602017931,
+          "homo": 30.694719417318126,
+          "overlap": 32.29499222464246
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.477603717046094
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 31.784889858031935
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.941887468928776
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.574496625265702
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 32.666316798525074
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.27817392011448
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 34.108313104655736
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.12844921630093
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 35.96734560838665
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 36.900117473093026
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.275522188887887
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.251660763391175
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.83659685206284
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 29.965864743457736
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.46758284165955
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 33.972725958395614
+          }
+        ]
+      },
+      "101": {
+        "mean_return": 32.951999982969596,
+        "group_means": {
+          "distinct": 35.03641519904121,
+          "homo": 30.71161310999855,
+          "overlap": 32.36117601554534
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.263996778335187
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 32.13802773504321
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.81063244076135
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.63379548585445
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 32.7544147503059
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 35.69361112858854
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 33.50731668949134
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.53315845683077
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 35.99839975069181
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 36.73159041833888
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.199433634808912
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.392265513092426
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 34.05063799096298
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 30.377823422967964
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.11249950394512
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 34.03439602749462
+          }
+        ]
+      },
+      "102": {
+        "mean_return": 32.89234298975324,
+        "group_means": {
+          "distinct": 35.236203637998095,
+          "homo": 30.490368876509415,
+          "overlap": 32.14979841700426
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.536262138206204
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 31.568783121722966
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.73280804316967
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.12362220293881
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 32.941649920128405
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 36.06606873905133
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 33.8311969473034
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.5393937495947
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 36.29555249824456
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 36.74335997366616
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.42364137812894
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.47098877995561
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.636568910167504
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 29.539943170286666
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.181392593053666
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 33.646255670433185
+          }
+        ]
+      }
+    }
+  },
+  "1.0": {
+    "mean": 32.614937322667046,
+    "std": 0.12305003126951439,
+    "group_means": {
+      "distinct": {
+        "mean": 34.83288660972913,
+        "std": 0.10026037780574247
+      },
+      "overlap": {
+        "mean": 31.983945364446594,
+        "std": 0.13157875022788293
+      },
+      "homo": {
+        "mean": 30.234501329404605,
+        "std": 0.19188636027743078
+      }
+    },
+    "seed_values": {
+      "100": {
+        "mean_return": 32.74934017723739,
+        "group_means": {
+          "distinct": 34.89987415923037,
+          "homo": 30.454486768289502,
+          "overlap": 32.12870846787634
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 28.801391644924202
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 31.302848520245345
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 33.03380352107855
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.679903386909913
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 32.39278052763499
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 35.883920064598314
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 33.798037008908516
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.45084612852705
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 35.8792430285133
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 35.99441819720006
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 30.165265309826832
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.110480129798077
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 34.010723585456006
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 29.858889943648506
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 34.29899607995821
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 33.327895758570406
+          }
+        ]
+      },
+      "101": {
+        "mean_return": 32.58765098911764,
+        "group_means": {
+          "distinct": 34.88116474040216,
+          "homo": 30.101591798022362,
+          "overlap": 31.951510031896646
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 28.539548386537096
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 31.186341321016368
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 32.6495767584704
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 28.030900726065585
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 32.26728461006894
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 35.659395004531035
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 33.62271417081203
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.52819181516017
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 35.664833360922074
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 36.544569480918696
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 29.925554677718306
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 30.98680436962506
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.750580970790686
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 29.624733968265783
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 33.86314670337922
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 33.558239501600816
+          }
+        ]
+      },
+      "102": {
+        "mean_return": 32.507820801646105,
+        "group_means": {
+          "distinct": 34.71762092955486,
+          "homo": 30.147425421901946,
+          "overlap": 31.871617593566793
+        },
+        "rows": [
+          {
+            "task_id": "validation_homo_000",
+            "kind": "homo",
+            "return": 29.288485613486987
+          },
+          {
+            "task_id": "validation_homo_001",
+            "kind": "homo",
+            "return": 30.54313796683223
+          },
+          {
+            "task_id": "validation_homo_002",
+            "kind": "homo",
+            "return": 33.011806024940725
+          },
+          {
+            "task_id": "validation_homo_003",
+            "kind": "homo",
+            "return": 27.746272082347843
+          },
+          {
+            "task_id": "validation_distinct_004",
+            "kind": "distinct",
+            "return": 31.686788046731078
+          },
+          {
+            "task_id": "validation_distinct_005",
+            "kind": "distinct",
+            "return": 35.44501582102168
+          },
+          {
+            "task_id": "validation_distinct_006",
+            "kind": "distinct",
+            "return": 33.51904672064994
+          },
+          {
+            "task_id": "validation_distinct_007",
+            "kind": "distinct",
+            "return": 35.411106243548595
+          },
+          {
+            "task_id": "validation_distinct_008",
+            "kind": "distinct",
+            "return": 35.86482808772784
+          },
+          {
+            "task_id": "validation_distinct_009",
+            "kind": "distinct",
+            "return": 36.37894065765005
+          },
+          {
+            "task_id": "validation_overlap_010",
+            "kind": "overlap",
+            "return": 29.646184729090542
+          },
+          {
+            "task_id": "validation_overlap_011",
+            "kind": "overlap",
+            "return": 31.387384200004583
+          },
+          {
+            "task_id": "validation_overlap_012",
+            "kind": "overlap",
+            "return": 33.91961530703394
+          },
+          {
+            "task_id": "validation_overlap_013",
+            "kind": "overlap",
+            "return": 29.350426445323276
+          },
+          {
+            "task_id": "validation_overlap_014",
+            "kind": "overlap",
+            "return": 33.460895191130184
+          },
+          {
+            "task_id": "validation_overlap_015",
+            "kind": "overlap",
+            "return": 33.465199688818224
+          }
+        ]
+      }
+    }
+  }
+}

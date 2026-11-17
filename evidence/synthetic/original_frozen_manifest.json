@@ -1,0 +1,2238 @@
+{
+  "version": "icml-frozen-synthetic-evaluation-v1",
+  "created_utc": "2026-11-16T15:00:06.254661+00:00",
+  "root": ".",
+  "status": "FROZEN",
+  "kappas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "seeds": [
+    100,
+    101,
+    102
+  ],
+  "required_methods": [
+    "ma_usfa_ddqn",
+    "entry_greedy",
+    "no_attention",
+    "no_sf",
+    "no_teammate_conditioning",
+    "shared_joint_ddqn",
+    "shared_joint_ddqn_total"
+  ],
+  "matrix_complete": true,
+  "final_test_ready": true,
+  "development_complete": true,
+  "world": {
+    "gamma": 0.95,
+    "horizon": 40
+  },
+  "protocol_dir": "rebuttal_20261106/protocol/tasks_v1",
+  "protocol": {
+    "version": "e2-v1",
+    "counts": {
+      "test": {
+        "distinct": 12,
+        "homo": 8,
+        "overlap": 12
+      },
+      "train": {
+        "distinct": 24,
+        "homo": 16,
+        "overlap": 24
+      },
+      "validation": {
+        "distinct": 6,
+        "homo": 4,
+        "overlap": 6
+      }
+    },
+    "declared_split_fingerprints": {
+      "test": {
+        "file": "test.sealed.json",
+        "sha256": "e36cc00ea22f0ea650f853d7aa2077738a6a3b19e35d5268cbea9ab284c6aadc"
+      },
+      "train": {
+        "file": "train.json",
+        "sha256": "ca64a7e8c0c2aa454ea5161b2128e71e876bf3b257143fcb2abdb90925e233ac"
+      },
+      "validation": {
+        "file": "validation.json",
+        "sha256": "93bd2f237fb4769632d5efbed29f1d840610452e3ba8a2a42c521c1a56f8be43"
+      }
+    }
+  },
+  "selection": "validation-best mean over all validation objectives; first tie",
+  "runs": [
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed100/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa0_seed100/upper.pt",
+      "parameter_sha256": "83d82cec6d59e03872c6d7894cb1ac11379405272169a7cd75babe161750bae2",
+      "lower_parameter_sha256": "7255a14f8515b04ef55dc7d076ca0b27e0a772c648785d40363984e175c01ca7",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.527468558178256,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.0,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed100/lower.pt",
+      "method": "entry_greedy",
+      "seed": 100,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "7255a14f8515b04ef55dc7d076ca0b27e0a772c648785d40363984e175c01ca7",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed101/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa0_seed101/upper.pt",
+      "parameter_sha256": "931ac3684ca653c670c5a2ff489d4c148448b811fec36ba42a3361569f5776b8",
+      "lower_parameter_sha256": "59648ff44c7254ee676a6082467555f53e0d78b06244d34167161fa766135a9f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.533901348245,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.0,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed101/lower.pt",
+      "method": "entry_greedy",
+      "seed": 101,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "59648ff44c7254ee676a6082467555f53e0d78b06244d34167161fa766135a9f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed102/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa0_seed102/upper.pt",
+      "parameter_sha256": "30c56984dca087d34a47ee407f68a085dbebe4de6e1518fd74e2e18af23d9552",
+      "lower_parameter_sha256": "f47fe1922d938d3ea283333190307a98f00a5605aff49518745e57ac754f1b5d",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.53295289741939,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.0,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed102/lower.pt",
+      "method": "entry_greedy",
+      "seed": 102,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "f47fe1922d938d3ea283333190307a98f00a5605aff49518745e57ac754f1b5d",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed100/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa025_seed100/upper.pt",
+      "parameter_sha256": "d004846f09f8f7d9433c8b9d56662bdeb37249023aca067f9388477554e58420",
+      "lower_parameter_sha256": "8fdd210c8f5bdab780cce2b27543dfe0729f894c963e5c67cde12ed205981ede",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.064575842987665,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.25,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed100/lower.pt",
+      "method": "entry_greedy",
+      "seed": 100,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "8fdd210c8f5bdab780cce2b27543dfe0729f894c963e5c67cde12ed205981ede",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed101/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa025_seed101/upper.pt",
+      "parameter_sha256": "d431245a9cb65163589e5c2726d69f67b138347e82561f2d5f258626cca847b0",
+      "lower_parameter_sha256": "54888885db389207d7de83ad718b5dfe5e728fb2c171f4d273ab14bd0cbfaea4",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.10858605166355,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.25,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed101/lower.pt",
+      "method": "entry_greedy",
+      "seed": 101,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "54888885db389207d7de83ad718b5dfe5e728fb2c171f4d273ab14bd0cbfaea4",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed102/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa025_seed102/upper.pt",
+      "parameter_sha256": "f94a1d91a23b1c831eec40f093bed7345e0e6866ae29cc8b997fdadd6b2ec4de",
+      "lower_parameter_sha256": "9f587e0fc02e319729d0f83f397bdb7a3ae4b256eff3fa8a5c626d035af41102",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.195514771526035,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.25,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed102/lower.pt",
+      "method": "entry_greedy",
+      "seed": 102,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "9f587e0fc02e319729d0f83f397bdb7a3ae4b256eff3fa8a5c626d035af41102",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed100/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa05_seed100/upper.pt",
+      "parameter_sha256": "4ce94b2fca9707e3fd46f22b2371b6c15594cd75b53d4b5ec37fbe4df3d7eafe",
+      "lower_parameter_sha256": "b685ff5ffa3ef719dac99da4449ade3fbb834f2ae4cb32441d5fd7e21e3c3bf7",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.093159934391096,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.5,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed100/lower.pt",
+      "method": "entry_greedy",
+      "seed": 100,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "b685ff5ffa3ef719dac99da4449ade3fbb834f2ae4cb32441d5fd7e21e3c3bf7",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed101/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa05_seed101/upper.pt",
+      "parameter_sha256": "ae4e3fc74ef999526f900e0d3f7e78c4e1bd322b41f14d30dc8150ae7f12fdbf",
+      "lower_parameter_sha256": "e989f6dff516e2e5f1c436eb4de2373f7d52061c8a1258dc81c94a9618d8044c",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.96335641162268,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.5,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed101/lower.pt",
+      "method": "entry_greedy",
+      "seed": 101,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "e989f6dff516e2e5f1c436eb4de2373f7d52061c8a1258dc81c94a9618d8044c",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed102/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa05_seed102/upper.pt",
+      "parameter_sha256": "d644582a6c9769ecc906f89be6acc3ffb53a747301426f6f3dc274f6bac27368",
+      "lower_parameter_sha256": "e1c1b98886ec83a61f2323048905b148a185d2f1474a8b57009fcdf8ef9c473f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.12881316872977,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.5,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed102/lower.pt",
+      "method": "entry_greedy",
+      "seed": 102,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "e1c1b98886ec83a61f2323048905b148a185d2f1474a8b57009fcdf8ef9c473f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed100/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa075_seed100/upper.pt",
+      "parameter_sha256": "51c3f7b8b901b98643781b6e2200a24c21a86c33bb0cf49d20a55e6b4d0c4b60",
+      "lower_parameter_sha256": "ecad17bccb798168d342e2c4369054a075aaa9775dd7aa70642776843c0e3e84",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.57767669825326,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.75,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed100/lower.pt",
+      "method": "entry_greedy",
+      "seed": 100,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "ecad17bccb798168d342e2c4369054a075aaa9775dd7aa70642776843c0e3e84",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed101/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa075_seed101/upper.pt",
+      "parameter_sha256": "5c521771967b5e0e5e9240e0bbbc7f84a8175768fac7cf883139cd886e4dfd5c",
+      "lower_parameter_sha256": "d0e9b888bbc93342b5f336f4a2cb24881cb8dc7c1e72a133f5f94abba1affef0",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.74226725104749,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.75,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed101/lower.pt",
+      "method": "entry_greedy",
+      "seed": 101,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "d0e9b888bbc93342b5f336f4a2cb24881cb8dc7c1e72a133f5f94abba1affef0",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed102/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa075_seed102/upper.pt",
+      "parameter_sha256": "509350c6dd9f516a0eed7928eb4ed9fd5d4711dd5ea3926e4021866472745c94",
+      "lower_parameter_sha256": "ecd84f37a508290e31bd0ed31061490170cb986582f4101a17e8ea30e3f6954f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.8086165464821,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 0.75,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed102/lower.pt",
+      "method": "entry_greedy",
+      "seed": 102,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "ecd84f37a508290e31bd0ed31061490170cb986582f4101a17e8ea30e3f6954f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed100/lower/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed100/upper.pt",
+      "parameter_sha256": "3874ead3540f03ecad85ca451bb18cf64b9c3f558df0822e2965cfc2ab865ec2",
+      "lower_parameter_sha256": "2d964a510798a1842ff9446ba500a93702f047c454177b5cd30d908e9ed5c195",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.265432808270155,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 1.0,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed100/lower/lower.pt",
+      "method": "entry_greedy",
+      "seed": 100,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "2d964a510798a1842ff9446ba500a93702f047c454177b5cd30d908e9ed5c195",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed101/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed101/upper.pt",
+      "parameter_sha256": "39549ed00348eb26695bb37211b5fc517f822bc7beb6a0b0d05b478db88fc86c",
+      "lower_parameter_sha256": "e369aff47feb60f3402ce13e46941b00beed0cf66b7726cec80fa32756cf2a33",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.458965231465015,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 1.0,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed101/lower.pt",
+      "method": "entry_greedy",
+      "seed": 101,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "e369aff47feb60f3402ce13e46941b00beed0cf66b7726cec80fa32756cf2a33",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "main_attention",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed102/lower.pt",
+      "method": "ma_usfa_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed102/upper.pt",
+      "parameter_sha256": "b4737a74bace31b4e8abff6d93d16d4899a01fd14d177491e6b119c7c2997f8a",
+      "lower_parameter_sha256": "992e61cc4ef3bd73ffc3a2b7875582f18044ae62dae9a02e79571bcb9bb826d5",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.11127070412854,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 0,
+      "kappa": 1.0,
+      "kind": "entry_greedy",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed102/lower.pt",
+      "method": "entry_greedy",
+      "seed": 102,
+      "parameter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lower_parameter_sha256": "992e61cc4ef3bd73ffc3a2b7875582f18044ae62dae9a02e79571bcb9bb826d5",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": null,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 0,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed100/best.pt",
+      "parameter_sha256": "07ae47c8477056746aed3ff502f6b25d1ad28a9734e67b12cd5230035b6c440e",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.24705159161108,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed100/best.pt",
+      "parameter_sha256": "363401756e74e42f11223e07ac4b4ee93b3ee52e7f939b097ddc6e87571963a3",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.319030971335366,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed100/lower.pt",
+      "method": "no_attention",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa0_seed100/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "2e7e16cbdc2af64bcd54b149f8fb3d8f17e4550dc92af61fef0bf5dba4246b80",
+      "lower_parameter_sha256": "7255a14f8515b04ef55dc7d076ca0b27e0a772c648785d40363984e175c01ca7",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.56816797943722,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa0_seed100/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "c3bd14631a9543e2c2efc8dae11f5643d5a67c49fa23fb382950da3bf1de2613",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 23.819211637536554,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa0_seed100/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa0_seed100_measured_recovery002/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "1e8de598adeb16624ba48bb118da8358f46d7166796d3e49a226f444e4b73c89",
+      "lower_parameter_sha256": "428088ba10f9af304d9cd64c80782911dc312d470b976dc413e9995d606b50de",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.436213717428295,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed101/best.pt",
+      "parameter_sha256": "542ab4f23dce1e8ac74e93bc5abe73dabcab9b7ad9700c77598d2bc22563b7a8",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 31.10863719123684,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed101/best.pt",
+      "parameter_sha256": "069686fd4ac7b97b13d903aa5d13d60c60661c37739f7f109323e428718672e7",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 35.74118854584513,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed101/lower.pt",
+      "method": "no_attention",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa0_seed101/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "1514ef804afad843a83a587c20d8fdef270d0e38b742d81bfc7f63c44b4b192a",
+      "lower_parameter_sha256": "59648ff44c7254ee676a6082467555f53e0d78b06244d34167161fa766135a9f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.531387097889414,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa0_seed101/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "c47776aaf3c847de4991cb1e036bd1e367e12e529279543cb7bea39fa30b99ad",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.14438901322017,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa0_seed101/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa0_seed101/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "16ad153f1aa376bdd435d0b9e8d91cc5033b0e0f7f141a80624da92e212867d2",
+      "lower_parameter_sha256": "30642079e9c9ceb656f729b286e1b02bffd8b562838a8519ed04afc51e43b388",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.385653421713954,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed102/best.pt",
+      "parameter_sha256": "c8f19c20136434c04a3aa26a12246779369fcce2149ee0a874f947e25672594c",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 31.889245841698784,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed102/best.pt",
+      "parameter_sha256": "b77b1c133f79a5ae3c3470ff6eb21a0c60570554d6b029558e80f39927126078",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 35.6212459559667,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed102/lower.pt",
+      "method": "no_attention",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa0_seed102/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "5d61f2cb810dad5ecfd92d12acd9d90d33742c025ee43cc0d920ca0969634152",
+      "lower_parameter_sha256": "f47fe1922d938d3ea283333190307a98f00a5605aff49518745e57ac754f1b5d",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.5647511805389,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa0_seed102/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "d04dffcd03e32bcf8dceae5814af871621c45a8ffe48a1c7904a0b045da5904f",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.95572288756702,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa0_seed102/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa0_seed102/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "eeec82764c9ae76ee2e80a12c925abc4508161eb18ad21c030ee13f0359177d2",
+      "lower_parameter_sha256": "00062213a893f66d63a7985264cd6fffa93deb2d97cacde2db621420cac846e5",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 37.546308475733184,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed100/best.pt",
+      "parameter_sha256": "b71b37357edf739998e2394f632144b429790d8590d8756b090366685c915396",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 28.108698406019794,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.25,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed100/best.pt",
+      "parameter_sha256": "d940380f7cd1a2663bf09ef10ca3411dd2bd38a25b0df92b8ffb6c0e1d7cc99b",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.548481501427975,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed100/lower.pt",
+      "method": "no_attention",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa025_seed100/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "c99ab991b9f604ff79997407d06f9f62e699bca57655edaf3703faa19b4db21e",
+      "lower_parameter_sha256": "8fdd210c8f5bdab780cce2b27543dfe0729f894c963e5c67cde12ed205981ede",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.22590780099516,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa025_seed100/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "bc66f15a25f232235f85213e70311d85b1e66498d05eda2105ecfdeceb520f7d",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.563360452779676,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa025_seed100/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa025_seed100/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "e43df6d31739dca820b0e00c293de7060dc1a7d120530db8c2b02217515f5022",
+      "lower_parameter_sha256": "c3377c047cdc69d0fd7bac2be2d697bc94783f6136d0a9436335be14d09038f4",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.854350811142496,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed101/best.pt",
+      "parameter_sha256": "e9a26268611fa9ae46780b6b123d037e9146310adf5e1ed3a45181b0304cd747",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 29.11094146263934,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.25,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed101/best.pt",
+      "parameter_sha256": "28f2a8b2113407e9de7565e4ff964673de3fea0936d7d8c3cf38e501e0599f29",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.77120595699914,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed101/lower.pt",
+      "method": "no_attention",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa025_seed101/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "ea4a4c2747c81f157dcfe88ab191c2ea43fca7024541ccfaaa16207bcd3e982b",
+      "lower_parameter_sha256": "54888885db389207d7de83ad718b5dfe5e728fb2c171f4d273ab14bd0cbfaea4",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.2349193161735,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa025_seed101/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "40e9f60b5bed142cf614a06803309f3e3c9379e077faded9f335b553ac6231a9",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.253073236563576,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa025_seed101/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa025_seed101/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "e5e6ff29e54aeb4fc0df725711858520e87b3cadd5a1a3c1312e478e9200632a",
+      "lower_parameter_sha256": "e5eee0c9d4bdeeadbc1b8db1d3973ae31a3ac6447fcf0194450ce94d4f82a33f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.931885515025385,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed102/best.pt",
+      "parameter_sha256": "520987007dc79ffc47db3f6729bebae3e2f00ad74a86d5bacd3a7152154510a6",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 28.78696096156264,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.25,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed102/best.pt",
+      "parameter_sha256": "a8b1142074d58ec3ac9b38b468fa637e49cea8548a360f872d4dfecc7a525e38",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 31.498900297128166,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed102/lower.pt",
+      "method": "no_attention",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa025_seed102/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "735f62121ab562fdcf7d3f2f3edee2a4a074450afb3d3135bec12b822fedba27",
+      "lower_parameter_sha256": "9f587e0fc02e319729d0f83f397bdb7a3ae4b256eff3fa8a5c626d035af41102",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.249606784276786,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa025_seed102/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "11d9e9e386f0a5848625d01111c6cfc6a800f8fa5175bf37eae520156ae662a6",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.93132956211123,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.25,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa025_seed102/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa025_seed102/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "8fc72650ea79f129ee8c303d5d5ed851606f5808cdb42c947f38fe9c1fb6bf87",
+      "lower_parameter_sha256": "46ac7402a772c41ea996907493d84fd5d23d5f9c01f2bc6251e81e578512921a",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.03504819086996,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed100/best.pt",
+      "parameter_sha256": "d6bd89514cf14a26d6e7d2fef25afcce5a21c0763ceba4d3ab348e688287db0b",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 28.1347928112998,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.5,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed100/best.pt",
+      "parameter_sha256": "5cc6a14aff810f154ad66e928ac5720563fa967334f0388f6745a4fd660ad267",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.48496568244113,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed100/lower.pt",
+      "method": "no_attention",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa05_seed100/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "c7f13fc9fd083cc597bdd3d88cab02dbfc4740f859663b81090102a2adfceadb",
+      "lower_parameter_sha256": "b685ff5ffa3ef719dac99da4449ade3fbb834f2ae4cb32441d5fd7e21e3c3bf7",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.09959487332505,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa05_seed100/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "e9b9c3f5059387d4d73b58edb3d967cffd79a1aab8c9e32ebb71d6e4ffcfb5f4",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 23.784924942946482,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa05_seed100/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa05_seed100/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "5b3bb06d9f8821b223e180f3481b26643c17fdd6ee46f5bbf950312bfeaa47f9",
+      "lower_parameter_sha256": "907ea8468b6a85bf9480be6d3ff0a79bc9a64e0c8b8807c13be6bf22c0f7a19a",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.422145342096925,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed101/best.pt",
+      "parameter_sha256": "1f399675de7fd431e8e458a8444e0280ab841351ed21903d936459095f24745c",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 28.825397497816574,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.5,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed101/best.pt",
+      "parameter_sha256": "aa3cd5040570684143b8e7ce36d8bef7fe6f6ac9fc3a7dbcc22c3bc229558d97",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.94405497891218,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed101/lower.pt",
+      "method": "no_attention",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa05_seed101/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "6fa9ec931fcb68accb3c66426cbe7d2603dc41d5c29ab08738144bf1fb41a850",
+      "lower_parameter_sha256": "e989f6dff516e2e5f1c436eb4de2373f7d52061c8a1258dc81c94a9618d8044c",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.865221334177846,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa05_seed101/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "dea6a4eda331a7c0d5bb4affbdafdfe1f0d280b27d9e9adcb7d1ad2106727958",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.1655069454626,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa05_seed101/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa05_seed101/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "fad2138b968c58d667e673be93e192f90363eb62d7d76f9652b2d94cec8f6f67",
+      "lower_parameter_sha256": "888e799bd86ad3faf3e17725aa170d555371f15def669e3dc0abde7b67c80608",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.80002356466839,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed102/best.pt",
+      "parameter_sha256": "87e354493b18e5f411ec6091b2883edc69cfc8c7c8c4becd67a98e166c828933",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 27.87131143696371,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.5,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed102/best.pt",
+      "parameter_sha256": "a099d9c34d2b11ad3c48de8000b0c1c38fe1a0bceb13c61ab753f5563af67311",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.801570016740378,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed102/lower.pt",
+      "method": "no_attention",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa05_seed102/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "2f1794f04076cde086f143a7ad7360efe6c67b23cc9f615a3dca4c88e100956a",
+      "lower_parameter_sha256": "e1c1b98886ec83a61f2323048905b148a185d2f1474a8b57009fcdf8ef9c473f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 33.12405846491461,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa05_seed102/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "461992ec875ef9f8c5873925d535ef557b70137acf0b6db95f2cc2809c7e8668",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.794523992938863,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.5,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa05_seed102/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa05_seed102/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "99d10cb41cd1f4293dc6ccc682867ead2e3eaee4ffe11260aa746d0e5a1bc227",
+      "lower_parameter_sha256": "5b4277c9c0fb377bdc4d808d7ce16a9775751ff1c0b4405a3acf0a53f5d20f24",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.99983943760994,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed100/best.pt",
+      "parameter_sha256": "7df244e50f5293ddca5f055d0f3536a7b67ddf68417b50730760f751287b5e32",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 27.88114405025651,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.75,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed100/best.pt",
+      "parameter_sha256": "f992a021b54462161a5fb4ab4dc42ee79b6095483ff4ac022606d06bbabc1738",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 29.54938074621503,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed100/lower.pt",
+      "method": "no_attention",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa075_seed100/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "ff787f35eff768bbac3e3182085787c7d988720a885f002401ee091cd72e93a2",
+      "lower_parameter_sha256": "ecad17bccb798168d342e2c4369054a075aaa9775dd7aa70642776843c0e3e84",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.75577257038824,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa075_seed100/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "b4fb5ee32be8feece3ff76546a128c1480cfd76845af4c5c83dc7f74bf73f3a2",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 23.737107397041463,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa075_seed100/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa075_seed100/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "d44b2bf8f38bde5c94a0cf798bef6998c855b001900d3e8a9611bc470befa07a",
+      "lower_parameter_sha256": "a72869c0ce693ef7dd20aff240422d746b2d85448dce901b6ffa16bba5743697",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.10470126219902,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed101/best.pt",
+      "parameter_sha256": "8eb7a9de9047cafd0f6d46850b6169b8c005dd1421e2d04e04233098c220e8b1",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 29.113281881414977,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.75,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed101/best.pt",
+      "parameter_sha256": "e8b87752f8a815046e01b7f575b9665fa2620e1992530b7b857b15cbedc18719",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 31.78526309392226,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed101/lower.pt",
+      "method": "no_attention",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa075_seed101/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "2fb9b3715317b44719a46d8dd3153183a261db386cfd47de4eddff9594da8f06",
+      "lower_parameter_sha256": "d0e9b888bbc93342b5f336f4a2cb24881cb8dc7c1e72a133f5f94abba1affef0",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.90188333603899,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa075_seed101/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "c9c8d801ca7909325dd7fd0d9c52aaa9c99ba080a74a27b5691bef5f3dc3e99e",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 23.97253252475173,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa075_seed101/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa075_seed101/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "efc8dcc205860029bf5d3024413e1c21421edf00dce33ed74417156098ba0ccb",
+      "lower_parameter_sha256": "8ff8973f46547bbe459e8dcfa40c3619176574c91fc460d2bc496e40a649eac4",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.27504925329082,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed102/best.pt",
+      "parameter_sha256": "c003eecd87a811c13f56ad600bd1db00a1342ebc750584597200898caa3bf189",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.262393187488513,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 0.75,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed102/best.pt",
+      "parameter_sha256": "16b595fb13042e7bab400a4103c9c09d1301b683a8f1a47cb77452423af19ad0",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 31.16846749468382,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed102/lower.pt",
+      "method": "no_attention",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa075_seed102/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "61e0dd6558517e783bc4d3eceb8c779c617e007c100b1f4bd38c165127d227c1",
+      "lower_parameter_sha256": "ecd84f37a508290e31bd0ed31061490170cb986582f4101a17e8ea30e3f6954f",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.77610193911744,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa075_seed102/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "802f364f4e030ca4a77f786edd3566841e9cd7b72c89ea3366306d97b1a250a8",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.82355664608462,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 0.75,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa075_seed102/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa075_seed102/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "4351c1c4bdfcbf3e94ae19c478f7d13d2d380323d570fdb65e944eca7714955e",
+      "lower_parameter_sha256": "4a15f6065d13a404c62c9f2af3d8741b53f8f9f52b33cc032ad4b81fc71f91f5",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.405842596705284,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed100/best.pt",
+      "parameter_sha256": "1fed696cfbaaa098a8326726274f60b6041375d87459606fdaa308fc40d07b53",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 27.378786049575286,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 1.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed100/best.pt",
+      "parameter_sha256": "5e1519a364db578a9fce8adff0046e2050847fcae1ce0ae2dabbac025b9d84fd",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 29.628680035892916,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed100/lower/lower.pt",
+      "method": "no_attention",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa1_seed100/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "19bcaa2306cac8ef5f0b047d490806279dde3fe63eb097a457b9b3040b41df1a",
+      "lower_parameter_sha256": "2d964a510798a1842ff9446ba500a93702f047c454177b5cd30d908e9ed5c195",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.64067026068231,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa1_seed100/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "b5bc0b7b382e78e2777061e1c5aa9b92c717d06c9bd1726f8a0eafafd5295b8a",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 23.700774308965848,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa1_seed100/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 100,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa1_seed100/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "b28b2cea8b5191e7150dcd0e0656b22ff1c40c7956bfafa524d2c464d4a02855",
+      "lower_parameter_sha256": "e107d09962e2244d8cd68f00bbfec92f7709abaaaabe3e3d688d20dc3eb4d2ea",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.33724032911122,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed101/best.pt",
+      "parameter_sha256": "2340b4c7a6e6f98d3ddca9f0990360287e9b54f07f2d235b61cc2418641e2fde",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 26.996158714432198,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 1.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed101/best.pt",
+      "parameter_sha256": "469c6326703ed09758d3d1beee2a98f1c9d398bf544bca3f90398d7f1c5f1c2e",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.36876137069018,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed101/lower.pt",
+      "method": "no_attention",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa1_seed101/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "035c869418f2591bf053bd13cf3239e0a1551190996c6522e6829af32776fed4",
+      "lower_parameter_sha256": "e369aff47feb60f3402ce13e46941b00beed0cf66b7726cec80fa32756cf2a33",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.56413590202782,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa1_seed101/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "030678ff7c374f49ae0ac7fd31935059a6f94cf82a539329f781393602b6dfd8",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 23.99904264502967,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa1_seed101/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 101,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa1_seed101/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "5eef149c73f227f599098413d6503d7a06125cf53abc83d06545dfb9d9eb81cf",
+      "lower_parameter_sha256": "fb77948be5376ef9b1457e0ac720957c87817cff6894a7ca89dd045a38cc468a",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 31.789713664868174,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed102/best.pt",
+      "parameter_sha256": "f5e595d3ad5263ced538c52cf0ca6b6db2444868690f4a53b2d3e063c480baa2",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 27.473551543999253,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 163840,
+      "kappa": 1.0,
+      "kind": "shared_joint_ddqn",
+      "method": "shared_joint_ddqn_total",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed102/best.pt",
+      "parameter_sha256": "309649a7e2cfa4118c4629a3914162397d89903db9218d5bf1811de2d9207d19",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 30.69366576568225,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 163840,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed102/lower.pt",
+      "method": "no_attention",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa1_seed102/upper.pt",
+      "variant": "no_attention",
+      "parameter_sha256": "92312420e0ddda1f4586266587074372d8daac20ba4a93905abc3d8e95e3627f",
+      "lower_parameter_sha256": "992e61cc4ef3bd73ffc3a2b7875582f18044ae62dae9a02e79571bcb9bb826d5",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.15282957705377,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    },
+    {
+      "budget_lower": 0,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "method": "no_sf",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa1_seed102/upper.pt",
+      "variant": "no_sf",
+      "parameter_sha256": "d3ce8d0bd13d785b806c28c1ba8e3960243201acaf67dbcbd34860a0c88872ca",
+      "lower_parameter_sha256": null,
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 24.828778619168094,
+      "training_transition_cost": {
+        "lower": 0,
+        "upper": 81920,
+        "total": 81920
+      }
+    },
+    {
+      "budget_lower": 81920,
+      "budget_upper": 81920,
+      "kappa": 1.0,
+      "kind": "ablation",
+      "lower": "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa1_seed102/lower.pt",
+      "method": "no_teammate_conditioning",
+      "seed": 102,
+      "upper": "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa1_seed102/upper.pt",
+      "variant": "no_teammate_conditioning",
+      "parameter_sha256": "66c9b1af52f74549fc153b71388592c6116f2f439229da4e22a7f12ec68f1c2c",
+      "lower_parameter_sha256": "42003cf1095a760d4a130c521edebb8cc5fe00aac85bbe08854d64250fff0a8e",
+      "source_array_sha256": "44ba374367b95002368f0612305a1b314d99d65291bacafe2dcb802351d0445e",
+      "selected_validation_return": 32.12077267421111,
+      "training_transition_cost": {
+        "lower": 81920,
+        "upper": 81920,
+        "total": 163840
+      }
+    }
+  ],
+  "files_sha256": {
+    "rebuttal_20261106/results/icml_evidence_20261116/training/evaluation_plan.json": "e6cf404f033ab3429d50be58fdc099aaf0279eebff8b109551aaa47c98300aa7",
+    "rebuttal_20261106/protocol/tasks_v1/manifest.json": "73ef5100165e9b805a9ff5bf3b4a026618b43edc4214cc6c5616146f05f86467",
+    "rebuttal_20261106/protocol/tasks_v1/train.json": "f578d62eccde028ac92fe44143c488203d6e3540c38dc300bea7709e140fe5d1",
+    "rebuttal_20261106/protocol/tasks_v1/validation.json": "eec964b34ff915e43c4b10b619ece90479f4dff30452635a62ed4c36ad932bb8",
+    "rebuttal_20261106/results/paper_aligned/experiment_manifest.json": "a9c103d7c3aa24eccb506c11e20b0482ec8c4a0130d1f02c885010e640980309",
+    "rebuttal_20261106/protocol/icml_evidence_20261116/development_plan_measured_recovery002.json": "b35a9442d3f833378c7b1c2ca9b3e0682267763bacdc71da88ae5aecae66a37e",
+    "rebuttal_20261106/runs/icml_evidence_20261116/matrix_measured_recovery002/execution.json": "1636784832a9928e0758a8b759cc72042889fcbdc134b3837eba448ba8903f54",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/evidence_evaluate.py": "18d92afa04b5adb699aeeaaa58622f28cd92c258653168455e2023702016895a",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/exact.py": "fb79976b398f488f61a68fcd29892a60fb085136cc86ceef3cdfc5f74d7a4693",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/legacy_world.py": "fee40b31f22ee56d978b61e7f184f310da1979df259b405419c20768a16d91d0",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/learning.py": "982d0370483308699f5315e76a56279facfbc125817b33205e3214154ee09767",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/task_protocol.py": "294118415c1d45f27765c6a1c08f168d0da34acba4548d61e6dea5783e320c83",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/paper_aligned_run.py": "723aab384e75d2b2cfcd4b317709b9c02d563c049e39fee238f7e8832b4e7207",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/paper_aligned_attention.py": "28afd1cc097707a084bcff2bc254dabc122e495bd6b1a38a68e98a1ffe445401",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/paper_aligned_lower.py": "f86eba25786dcb18bd4fd50c34756775af588420a7e58562473c7406844b5a23",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/evidence_ablations.py": "59eaeb6c9bf82d1949bc3e3d75967beca47b3a72daec06fdd67a4e3c551daf52",
+    "rebuttal_20261106/code/ma_usfa_rebuttal/evidence_shared_baseline.py": "5cd26255d3e13ccb60854a02f7b439c73b654eb9335f172f2d7e412c3bb3ad9d",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa0_seed100/upper.pt": "3d4aabef55c189d75ae44d20305212754846b29a095c17d09a342d02e874b2aa",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed100/lower.pt": "789eec402c78bc36f80989e800ba560d2e66894d0ab8c6e40ceae22b559aad07",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa0_seed101/upper.pt": "63610c706dbe61eb10a682c90d89d49b13de39a9bf17c4df2faf22b7f8418f01",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed101/lower.pt": "9b50aaf6484a721e9dbd84179aa5f73e0b64f299080addfa66582a13bc223f29",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa0_seed102/upper.pt": "82f2936093fa7ecceab7e7243d853ff389d7602f1d1bf6e6f23d570df1f3ed3e",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa0_seed102/lower.pt": "b87dceba367e2762298552af7d9d2546bc95c6f6bb5888da25deb451cb7d639d",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa025_seed100/upper.pt": "908cb629f13c2227736542f95d12db0a108fa33312089357bcb9eea3b7b9692d",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed100/lower.pt": "244272af51ffb9b64e38324bdd48de143eaa46df2157ccacb9b436ce9dc09adc",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa025_seed101/upper.pt": "691094f39aa461175f3f7d690e0503b24d81ed41e6a311075b6d97cd1c0226c9",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed101/lower.pt": "2fb966e2a5bf5178d5f0e20512331f2639973d64a4d9db8d561b89635ce44486",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa025_seed102/upper.pt": "1c37ead5c401d503a9624fe01d2ee61a217e07469150efac25c3cd195e804ccc",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa025_seed102/lower.pt": "bd59266b2b6f71936cebe5c2543239f4650b02ae3cab932e6c6f1be2379c0c85",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa05_seed100/upper.pt": "6cadf00cc75982d051f92c18b313e9f77caaf435823d40e609909d38dfb07cf5",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed100/lower.pt": "12c71cdfbf66d9c31fe7013c0a2a8764e9d7a881607169305293f31b98f9b95d",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa05_seed101/upper.pt": "630c2321fd9f8c891e8ee27b7e819d6d0b67e41b5876a375787715a481d10cd4",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed101/lower.pt": "73a5fdf95281c72e8ed245f22da47319047ccabe2ad880480c4fd065651d05f9",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa05_seed102/upper.pt": "404d75ec1515999943d22a7c93003149d54716411320988d82b01070c9186157",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa05_seed102/lower.pt": "a5d3fec0ea6585bb81a6abc976089956a6fa5202c7d2471662bca8f69ba45210",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa075_seed100/upper.pt": "8e08bf7703a44cd2647d8ed0183fef068a45799bb90e77e58d620031d0bb0324",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed100/lower.pt": "9ffc4a7b335d608f5d2c2e06269417da813e71b14702451d772c081b3f3ba23f",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa075_seed101/upper.pt": "a7e26eae987499ae22b5f2c9d63514637489d634d634cdeaaa11fc79d5f6c29e",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed101/lower.pt": "0f4d93078c74844f5b47f6a0a7b7aa85bcc35b4665116d6dc6578c1cc2583f86",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa075_seed102/upper.pt": "563e34e790b19247655ee9d9c3ad98c60761130c6fe31570f9995e21fb1527d4",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa075_seed102/lower.pt": "85fc296e831494c7f46518086b23042cec978db52a6dd6b4f4b616dce3684eb1",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed100/upper.pt": "db4973ae0e3febf05639d70b075ebad7a486ce82d49c148d299d24dc33e24451",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed100/lower/lower.pt": "133e4d5c3324f8998277fdf62b714fde84124472c7f210a393a960b4826629e9",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed101/upper.pt": "fb97e6b8723760ddea8bdd87cf4deb3447bb03c37bebb537849bf4339fa2812a",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed101/lower.pt": "f430293350c730fc12360fa45621a447186616be5b41fe531c11854db6f1732e",
+    "rebuttal_20261106/results/paper_aligned/ddqn_kappa1_seed102/upper.pt": "05d5cc9f4a518a6656d8ca40b0ad10713a46c18b34105f2d42a3be91106d7646",
+    "rebuttal_20261106/results/paper_aligned/lower_kappa1_seed102/lower.pt": "8af18f4d63e53118a0d58dc9b6a7bcbd3104b75394d71a718500ab1bde8f4856",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed100/best.pt": "fb09dab35ba837c3dd86af940a8ce020040d642271148f5e8ffcd10acb347762",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed100/summary.json": "adcd75358060a7b883b2c7499eaff1ed6d7146b00c4d10a32b068f5c826f858f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed100/best.pt": "643462bdb279b3947533c0b867d661856136009075ef4f183cc09bd84ae891fd",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed100/summary.json": "38630a9a936e9d99773a1c07f81f932d647cbd36940ce0d68e06f84557c405bf",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa0_seed100/upper.pt": "0ebfa6714fafcf2c5f4c74071be02a653530df231a051a62afb14a1195c8c3c0",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa0_seed100/upper.pt": "63ab3a7c225b923f375a032c37548944b536d983e996970b4366cef852c8b7e8",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa0_seed100_measured_recovery002/upper.pt": "f826fae9088c9b2d52d3cb1dce66926cf154c17e885c12cb6f5be9806b92e7a7",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa0_seed100/lower.pt": "74374c90643c450d833fe3e77f33d71d64ccc1c2637ec020047bb718fac19156",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed101/best.pt": "62ce3fa4ef08802ebb078b9922ec078349a1daf202a8bb6c70fe9b40c5e82182",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed101/summary.json": "2dd1bbe09667ff0ff691a9f3e5c0ae842935e6445f59c1d14a62bc301b28657a",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed101/best.pt": "078153955cc7babe393208f6734c020bb7296ed53e2adfab190984ab37393bcb",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed101/summary.json": "73efee69e2effc591f41ebbb187803a82c82772f07803e0aaa0cc23d6e8a432f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa0_seed101/upper.pt": "65d10e8380bedd71fb2dc2ae4e89722da99ec299d9ee091d484498b7790404df",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa0_seed101/upper.pt": "09fe210fe4d476f99e76cc02eb142c8454be781c964fc352c483509437610409",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa0_seed101/upper.pt": "7bfb097eb1c2a17e38b34e3529a5068123c4a1d12fd11ca176ea3ed68473c28e",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa0_seed101/lower.pt": "51d6c1d05bf2de8a95a5669b0fb5f38d44aff72c929ac17e0992d2bfc318c7f1",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed102/best.pt": "95d199329acef8be7c72be0747a5c30d11d349326ea217d61c82fa1321c26a1f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa0_seed102/summary.json": "969b2a4147223323ef9f4768379b3e6f8b7a64c70cf0b52633dd83ea9659afa4",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed102/best.pt": "3cfd54fc8b4bc61c8a04db240d89161c0d5b4694f5490ca634ad4aea203f2dfb",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa0_seed102/summary.json": "043278be7357d045eea16bb279467a5434238b2898a4042b4ea7566e6a73274c",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa0_seed102/upper.pt": "c3c6f34da7dea10bc7b36690443cfce047901ab3142c26f3517f6451575bb878",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa0_seed102/upper.pt": "922a88aab6e0e84b123de51bbc0c6e5235d6d7422c261954e56a37b8c57b8136",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa0_seed102/upper.pt": "3309807121a20a3aceafcfd1de9f08b8fc450d9f0f841e88756147cfebe3d2aa",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa0_seed102/lower.pt": "d11e63081d25b61107dd6b9701ce7d7e70ba145c6a61f09697d255270e3738af",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed100/best.pt": "01ab32c44b728c0bcb58cc77e4cc4105e1de075b16108050efc629a5060db9f9",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed100/summary.json": "d0a4ad243a58384623ca61bb8bd7a2090de2b57bfed6a6ff34b9b6012ab47cc5",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed100/best.pt": "06b1347602dfbd89164272aa8081d1d730bf39153af0a1ba3f6c091a51e8a3cd",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed100/summary.json": "efaa86d67ad0f1b7a169a0bbd8529fe95862018b5bff585030b984fd38a9ccdd",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa025_seed100/upper.pt": "b66e6726e700ac1ea6c09a6741565257ff5f37cb5acf5300252298255eef454a",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa025_seed100/upper.pt": "91f1fa6ce2b3d6cc4a6cd35a5a26a598000eb17d1efccbab3073e4db13131774",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa025_seed100/upper.pt": "f07872173c58a48c872e865b780e811ec01dc56558ccacf625c2a3123a4f8de6",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa025_seed100/lower.pt": "1252d90a96c4443054df0163466d51c92e598581be707f32787656328d8b9d99",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed101/best.pt": "b3445bd7d1ebd5dd5b982aff9190c13b43026c4597cf9704fbb39553ac2cfa46",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed101/summary.json": "2d41e388da9362ed02c08b3fa01f25900d6dfc1cc80cabc16813d73695b0247b",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed101/best.pt": "f12e2b3cdf759fadae36509980de24829e120673a1ad8c61689a1642028ccd97",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed101/summary.json": "04151518481bb965f80dfcb01086dbffa52b9ba4314bd9d50a170838a24f0d48",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa025_seed101/upper.pt": "a9b402c76b1aa8030836067da0c6fef24b231490dcaaa748798ed99a61e44300",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa025_seed101/upper.pt": "c855a1eebba6fdd176805b202b3597a412da566afcc8f729bca0080e8c42dc1f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa025_seed101/upper.pt": "92c308bd6c96dd8298ed17565b946288f32631354d7fdc2726a0386fa8d51df5",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa025_seed101/lower.pt": "04d54e4b7d1c3ab6179acbbb27371cf9895699992b473e8a6cb659a91be1789f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed102/best.pt": "392bbb9d1b82543813fdd99a8e1c1fc8ef169268445b48a0a47615ac8627e553",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa025_seed102/summary.json": "82c4ff127966b30c57e73e4241cbc997f34f0013b02f7bc67573624ff7cc34eb",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed102/best.pt": "a5bbfe1c5182e0aab8703f3245699de913afcf5895e830e7845c1b3837a6f223",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa025_seed102/summary.json": "bf50c444ac4f769d489e8066e6020cfc883632ae0d92bd88f68823ebd0dad8d5",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa025_seed102/upper.pt": "593ac680650f6cda03d491f1421f195f05a29ac53301752cd17f4b5920d325f5",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa025_seed102/upper.pt": "2533f459f57148b74318f87b0be123584563e1d9f8408d497027c115a1c558b9",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa025_seed102/upper.pt": "92258d7969dd003d032af25964a770dff2b8a2685654015603929b8459451cb0",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa025_seed102/lower.pt": "5f13b7be0b9a30946040785137cad7b0ba95047f0a7bb622da8dd84ec70eeb25",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed100/best.pt": "b808b4f6f168e448c756740db4e775431a7d713a89a42892df3765aa2df88678",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed100/summary.json": "7cac63793154d800c23e8518323824c2cd9b54e270bb69a70b7f7db37bb8060d",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed100/best.pt": "3780fc613318085a4406d5c59a27678cba4d38aa23fcb84b28b066fb2c5999de",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed100/summary.json": "7834bd80b818766b67809a3e9de87f5ed3c950ae9f67b68775604eb2fbc43d81",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa05_seed100/upper.pt": "a85d42513dfc3c3ee0256392e34c48917b4dd0c887c3c3202b815a6815997a05",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa05_seed100/upper.pt": "6f984728837323236193e62bc6bc136df0db9fca26197d99f090ea059c7ca376",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa05_seed100/upper.pt": "1479828b5d2a3b85261195ac9ce2277fb6382efd7eb77fe2555e2efb7af24165",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa05_seed100/lower.pt": "677a6311465ee104340bf7d690078c1ecb36e5d54780837e9a7e045f5e5fd044",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed101/best.pt": "edde6f6b15013576ddc969238e36aa3c44a9f438935c727143770626a77119bb",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed101/summary.json": "73eba053f0b2a4e2aa11dc53fecf264f57e80be75a2a79a6c8093473d4c0dc65",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed101/best.pt": "a76429a1643a54d8e167bda52fe4fb9e5aa49f2fa70cacbdb396e8de224fa4d0",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed101/summary.json": "f741b70602fc35487771f87293410a47d2fbebf102140e9e0608c531099a21df",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa05_seed101/upper.pt": "5f5103bc4ce67281ef61711ae997e8a4f01c363803958d2d9a7ec483c27249a4",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa05_seed101/upper.pt": "0a59c53874631466cd2b443c0d8ed401ad6e69783f29edafd1497762051c5073",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa05_seed101/upper.pt": "8e04c91d33ebd5c05754481d274ebbc8dd20b8238f22b72b6e6adf32fa16d286",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa05_seed101/lower.pt": "4eefa0ceeab4374e96448bfacf53f55b9d2d71633adfdaa7163c9f52cf0c93e9",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed102/best.pt": "187f2cfec415f7c10bbdb800bf5cc9052516749b8790fb88880a9cc569aa498b",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa05_seed102/summary.json": "b9c8bf3eb7617fb8e0dc432322c4b855007e8ef0d20d7317639a50508cdd601f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed102/best.pt": "d4c7c2228d6a859f2b92c7e3fd28ac8c119650b8b74458603eec7615ab223486",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa05_seed102/summary.json": "ded68b6cb281677687485c359b7cdf6779c182fce9675cec40e5a7af30726d83",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa05_seed102/upper.pt": "439d6ccfd8f38cced420347d4310466ce4ca1163bbe74dc468eaa88eb2d24bf3",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa05_seed102/upper.pt": "3ae9707d161e30d6d3e6f4caf7dda3a6e91edf3a9d67bd196a8dc2bff49ab7b8",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa05_seed102/upper.pt": "f854da34a7afa692340d7c850e7110bd4a4275d8b1373902c176dca7ffedc116",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa05_seed102/lower.pt": "af0b87552e475363b518f159ee93ae4696a2465dffb1cbf9a9de3a6f2c0d8899",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed100/best.pt": "53cae781c306905abd661f8773bcc44889b9b9bf4c649624927c412625ae2242",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed100/summary.json": "69b4562954caf87c637b680436ea271bfb463ea0b1ecc67a8ba3f74585ded6c0",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed100/best.pt": "920a0b4467b9c358c0a1b051cf0e211b5326988e08583a9a8f46eb23b1a6c7a3",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed100/summary.json": "752a3cbcf10a090247256ed5bc0ec8f6c4dd455176f69bb6492bd456111b80d5",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa075_seed100/upper.pt": "5900cd92b932834eb5793836053708490c8c7127b89e53a807f53138eaa4f774",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa075_seed100/upper.pt": "c76c090e6709174577dee075d4ef1886fd8b71b93e2efeaf47198b5a4bb265fc",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa075_seed100/upper.pt": "52d6bcb11aa4e84458bc46f75cc69f2e68f4d9b3ee4aca7be6730082cb74eb1c",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa075_seed100/lower.pt": "669abe2919a74d5a6db420b1a2815a20263ce90cdbe57ff8d5496e3b94c53e2f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed101/best.pt": "8b154835bc5888361ae219365709bc388929a4c5b27dc9ec5d3ae8479c4805fe",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed101/summary.json": "58d4cd3279dfa975329067935db342803acb4db75d1b6b339e4adec279fec882",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed101/best.pt": "966676c37e83aa9d0a90fcb3a4f9715daa8f29891f3e0e9e8b30736e3ea62156",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed101/summary.json": "1f197f173d7c48a1d594b2ae7f84971904e33d6be469382643a97d101ad329db",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa075_seed101/upper.pt": "a07d4cce7a532f81f24d2978505e3497259e33ca4ee00fe6f4ef300edbf80dc7",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa075_seed101/upper.pt": "d3b84be1772751c7c41d4703bfd69845d6fab4936175b50c163c58238ccc36d0",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa075_seed101/upper.pt": "63ce1b4978f1629a942ba6b63426b0bdace253c92492009419868cf13c94b40f",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa075_seed101/lower.pt": "b992a06bd37d8bea0393923db61e89adfadc16bea75b926ce9b6930a770e7580",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed102/best.pt": "31853060b17dd76825c8e7c36455714cce7b049f126131e9dc89e9e004334070",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa075_seed102/summary.json": "d8102f0c5b2a64983fb8c2c12ba88fbc7cb480bb4e282603cf7b3d24ff2710cc",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed102/best.pt": "bdf5ae7145f1e591d972c80b1226aa58d5a30d2c36a10f1c4459fa416531ba68",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa075_seed102/summary.json": "77ab256ff0a950ce6568d086c99775938b699587d406f0f6e319f84883e89d60",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa075_seed102/upper.pt": "9c878ca8f2df3f2a9ef8e9f61fa9907a3417dfa7bc5da4dde6637453b5be4b21",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa075_seed102/upper.pt": "358e2c475c08befb255194d7296d2c35303ab064a4a97a4fafb9987a3e8b6e2a",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa075_seed102/upper.pt": "9a5b1bae8045d5738ab29a3ab053eebb457f82a318f15382ae626320f92207e7",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa075_seed102/lower.pt": "f16b6c4df66da84e409c7bb67f767251e531820e20217e8a07b865833c4b04e7",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed100/best.pt": "1fefa4053656f9c10e596b64863599180571e9c20568e7e310178bc0058a0529",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed100/summary.json": "097af6f77a33973962d8004e7ae7b3489526d2e229eb301854c1da2385c3c673",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed100/best.pt": "ff25edfa3d5f62ae2758666c5beeef632760de1f0b4fffb4a819c63d61a1fbf8",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed100/summary.json": "2a807385a4af2e396b2576a3bdeeb81ac433fdc90603cadd234c29b11bb7a732",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa1_seed100/upper.pt": "8a6b9fc7c02903c5110b431ea25e7bee15d9f0d873fd515b5554a345569ad62d",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa1_seed100/upper.pt": "0aee2260c0e5f48c76af26dc235870f877e110b1d2efd981fac54d3cfd5f1e52",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa1_seed100/upper.pt": "c0e603e7da24dbe0e4f9ebb79078d870047b8aeea30acb8fb4263c14c7aa1623",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa1_seed100/lower.pt": "dcc8ccfeb3b5b431d331f576d509c087314bf543cf0f56c70af35164f286ed63",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed101/best.pt": "d0d685c999a99d4961f39acd3216115d2c5990ba4dfb749798634bce298d9ed5",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed101/summary.json": "b2290bdf29cce59632462be0420bf4ebccad56c561b173092b66b571a8694fbf",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed101/best.pt": "340fe3d8c1571aaa20343b75cff8c90df0088b7625584182cd90d67a6ff8f7ac",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed101/summary.json": "8e40866e27993200ee89b18dfc23394614c41c9a955e7b1ceb3ea8acb5d5973c",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa1_seed101/upper.pt": "9b0471ea3a56f476ebfb2cd43202769bcef3d566236fd05a3f65d3a6be012d74",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa1_seed101/upper.pt": "801d6bc317a5a7a0db1861d41395407de52bc37ffd7e410a6f82b90d80396522",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa1_seed101/upper.pt": "04aaf6aa1f374572e92ad0cb70df6f92bfefb901f84a69a5dd53a54e8e475207",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa1_seed101/lower.pt": "b75afc47bd35d9b391c287dcf80e2ed02ab3c31b915045e400b40acd17fb531d",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed102/best.pt": "5962acdfb3c00b3638a935d8b8ef04789469374a51fa91f63a5a02dcb93eefb4",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_kappa1_seed102/summary.json": "7946358be42e6e371d82be91e77d4896ab68165c2cb24a7bf01c6b36d95ac500",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed102/best.pt": "8a3c8d49814cafdb63d28eefeb5bef38979abdbdf25befef48eff169c503ef05",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/shared_joint_ddqn_total_kappa1_seed102/summary.json": "961b107f0435310f2892da6954b5e1c22f45e6bb008f236596a50b6ab69a7f35",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_attention_kappa1_seed102/upper.pt": "3f3976e9b2aa22a4d9c67ca0abfea4dc93793f4c5aba2a3c1c1fcd9bf78e949e",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_sf_kappa1_seed102/upper.pt": "e749ac93161bac33a5f618d6d9a778b665c9f03a9d3beb85786bfa16d736e486",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/no_teammate_conditioning_kappa1_seed102/upper.pt": "e5a255478600f02ec22f2250afe9f0f4bd3c699b24d4bee0b3ee530d32d5e9ad",
+    "rebuttal_20261106/results/icml_evidence_20261116/training/lower_no_teammate_conditioning_kappa1_seed102/lower.pt": "43cf5b193893975fc9add5d060afc1be869d181e1ef5a7a186095f1d54f7dda9"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.8.0"
+  },
+  "test_tasks_parsed": false,
+  "optimizer_updates": 0,
+  "evaluation": "exact finite-horizon discounted team return under the declared initial distribution",
+  "fixed_comparators": [
+    "exact_sync",
+    "primitive_independent",
+    "joint_gpi",
+    "dp_optimal"
+  ],
+  "scratch_scope": "Validation-target-specific scratch models are not reused on unseen test targets. No target-specific scratch comparator is claimed by this evaluation.",
+  "historical_main_binding": "Legacy main upper checkpoints lack world/task metadata; the freeze checks their recorded seed, upper budget, source-array hash, paired lower world/seed/budget, and exact checkpoint bytes. Historical provenance manifests may be added as evidence_files.",
+  "frozen_sha256": "e3043722b9365241f56e8c46794ede348c3d9b43f6c56faf3af5f3650426a560"
+}

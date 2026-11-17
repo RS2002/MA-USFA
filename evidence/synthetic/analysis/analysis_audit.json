@@ -1,0 +1,43 @@
+{
+  "version": "icml-complete-synthetic-evidence-summary-v1",
+  "status": "PASS",
+  "created_utc": "2026-11-16T15:04:23.390696+00:00",
+  "frozen_sha256": "e3043722b9365241f56e8c46794ede348c3d9b43f6c56faf3af5f3650426a560",
+  "input_sha256": {
+    "rebuttal_20261106/results/icml_evidence_20261116/final_evaluation/test/evaluation.json": "5fa5e8813e50fc24ebd967b82186f6b75ebdc168b2572154a41193dfd951d439",
+    "rebuttal_20261106/results/icml_evidence_20261116/final_evaluation/frozen.json": "51e109072861e96316e9d8dc3b4d55eef8a1475cab4956d1bdc8beea4012b0d8",
+    "rebuttal_20261106/results/icml_evidence_20261116/final_evaluation/validation/evaluation.json": "f81702d18687c2fda8fbe426b75d6d46b1ff4dab18e3787f9891e140cdb4a13b"
+  },
+  "analysis_code_sha256": {
+    "summarize_icml_evidence_v1.py": "1c2fcc70080810b5d8006ea3c6cd39eda60e391fd58e05c431faba91cc266da2",
+    "analyze_ddqn_existing_v1.py": "7a9ba26b0102a66845370b7fc5084555d88e7cf01a5fb174313cb3f43dd1539e"
+  },
+  "learned_method_runs": 105,
+  "exact_reference_runs": 20,
+  "test_rows": 4000,
+  "test_objectives_per_run": 32,
+  "test_group_counts": {
+    "homo": 8,
+    "distinct": 12,
+    "overlap": 12
+  },
+  "final_evaluation_complete": true,
+  "training_artifacts_complete": true,
+  "saved_aggregates_independently_recomputed": true,
+  "dp_upper_bound_tolerance": 1e-06,
+  "direct_sealed_file_access": false,
+  "optimizer_updates": 0,
+  "validation_source": "同一frozen清单下的完整2000行validation评价",
+  "scientific_status": "descriptive frozen-test comparison; no significance test or automatic model changes",
+  "cost_accounting": {
+    "unique_lower_checkpoints": 30,
+    "unique_lower_transitions_charged": 2457600,
+    "unique_upper_transitions": 8601600,
+    "note": "includes historical main models and reused lower only once; not a wall-time or source-library construction estimate"
+  },
+  "bound_file_count": 442,
+  "execution_origins": {
+    "reused_previous_plan_completed": 5,
+    "executed_under_current_plan": 85
+  }
+}

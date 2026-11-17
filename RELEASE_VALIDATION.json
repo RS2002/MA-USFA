@@ -1,0 +1,45 @@
+{
+  "version": "ma-usfa-corrected-public-release-20261117",
+  "status": "PASS_WITH_RECORDED_SCOPE",
+  "toy_unit_tests": 38,
+  "traffic_cpu_mock_tests": 85,
+  "evidence_files": 144,
+  "raw_test_rows": 4000,
+  "group_aggregates_recomputed": 220,
+  "frozen_replay_controller_runs": 105,
+  "frozen_replay_returns": 3360,
+  "frozen_replay_maximum_absolute_error": 0.0,
+  "frozen_replay_optimizer_updates": 0,
+  "isolated_validation": "validation/isolated_release_checks.json",
+  "toy_training_smoke": "toy/REPAIR_VALIDATION.json",
+  "traffic_validation": "tsc/VALIDATION.json",
+  "readmes": {
+    "README.md": {
+      "original_body_unchanged": true,
+      "only_current_entry_pointer_added": true,
+      "sha256": "3c6f72bbeae132ec9e6d1cbf63608ddbc23ba9b70ddfc7f2c550ea2b3c55ed6c"
+    },
+    "toy/README.md": {
+      "original_body_unchanged": true,
+      "only_current_entry_pointer_added": true,
+      "sha256": "e4411fe53ad3c8eab3dd58cf7f3f9b754b01121d80ab9a3d3fd22674512182de"
+    },
+    "tsc/README.md": {
+      "original_body_unchanged": true,
+      "only_current_entry_pointer_added": true,
+      "sha256": "ed5eee6e43a04f5b893bed885c19b98eb6d50c0c1d5910b193b4384775729e6e"
+    },
+    "tsc/data/README.md": {
+      "original_body_unchanged": true,
+      "only_current_entry_pointer_added": false,
+      "sha256": "9b4e14a366b9f50b15d090294a3795fb30aba4e715e2660bbdf53bd1ee339fd2"
+    }
+  },
+  "limitations": [
+    "No true Manhattan SUMO rollout, GPU training or Windows CMD execution on this Mac.",
+    "Traffic source-scenario binding and complete old server artifacts still require server verification.",
+    "Plotting was not executed in the scientific virtualenv; matplotlib is declared in requirements.",
+    "Frozen public test replay reproduces already-opened evidence and is not a fresh independent test.",
+    "No new full training matrix or test-driven tuning during this repair."
+  ]
+}

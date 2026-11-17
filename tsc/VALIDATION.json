@@ -1,0 +1,150 @@
+{
+  "version": "traffic-release-validation-v2",
+  "true_sumo_started": false,
+  "manhattan_scene_present_locally": false,
+  "cpu_contract_tests": 85,
+  "limitations": [
+    "No local Manhattan SUMO rollout was executed.",
+    "Scene-bound source provenance must be produced by source training on the server; unbound server artifacts remain unverified.",
+    "Historical source/SF checkpoint is incompatible and never loaded.",
+    "Windows launchers reviewed statically; no Windows CMD process executed locally."
+  ],
+  "commands": [
+    {
+      "args": [
+        "python",
+        "run.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "tail": "per-seed UPPER_SEED\n  --source-episodes SOURCE_EPISODES\n  --reference-episodes REFERENCE_EPISODES\n  --sf-steps SF_STEPS\n  --upper-episodes UPPER_EPISODES\n  --replays REPLAYS\n  --threads THREADS\n  --max-wall-seconds MAX_WALL_SECONDS\n  --max-rss-gib MAX_RSS_GIB\n  --min-free-disk-gib MIN_FREE_DISK_GIB\n"
+    },
+    {
+      "args": [
+        "python",
+        "-m",
+        "unittest",
+        "tsc_repaired.test_traffic_runtime",
+        "tsc_repaired.test_rollout_evaluate",
+        "tsc_repaired.test_task_selector",
+        "tsc_repaired.test_task_sf",
+        "tsc_repaired.test_task_protocol_v2",
+        "tsc_repaired.test_train_sources_v2",
+        "tsc_repaired.test_resources_v2",
+        "mixer_ablation.test_selector_training",
+        "mixer_ablation.test_evaluate",
+        "development_followup.test_train_budget",
+        "paper_aligned_followup.test_legacy_tasks",
+        "paper_aligned_followup.test_evaluate",
+        "test_release_pipeline"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "tail": ".....................................................................................\n----------------------------------------------------------------------\nRan 85 tests in 1.670s\n\nOK\n"
+    },
+    {
+      "args": [
+        "python",
+        "-m",
+        "tsc_repaired.test_source_sf"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "tail": "source/SF contract smoke PASS\n"
+    },
+    {
+      "args": [
+        "python",
+        "-m",
+        "compileall",
+        "-q",
+        "."
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "tail": ""
+    },
+    {
+      "args": [
+        "python",
+        "train_sf.py"
+      ],
+      "exit_code": 2,
+      "expected": 2,
+      "tail": "This legacy entry point used the withdrawn primitive-action/SF protocol.\nRun: python run.py --help\nCurrent pipeline: python run.py --stage all --scene-dir ../data/raw_data/manhattan_28x7\n"
+    },
+    {
+      "args": [
+        "bash",
+        "-n",
+        "run_all.sh"
+      ],
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "bash",
+        "-n",
+        "run_extended.sh"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "status": "PASS",
+  "python": "3.12.14",
+  "isolated_copy_without_research_parent": true,
+  "source_recipe": "per-node vanilla DQN, target-copy unit=episodes, default interval100; upper remains team DDQN",
+  "files": {
+    "run.py": "a355d08acc0062284a92cfc3aae087587f4ea114407766dce3374a14572a3cb5",
+    "train_sf.py": "623d234aa738ad3f1952e34b1e87369abfa2f125fa47f4f3019d54a2437611a1",
+    "test_release_pipeline.py": "99d55fe86f5b8eddd5ed24885225a7c2d8a331f3f8e8f36e24b820ca16e09651",
+    "graph.py": "ec0d9cd40881e3a181e4ee1690c0632ebe47f3a00282fa31ad7a03504994a40a",
+    "model.py": "623d234aa738ad3f1952e34b1e87369abfa2f125fa47f4f3019d54a2437611a1",
+    "composite_reward.py": "8b6bfa8583d6541143f4839f3b1556fc2551e3ba270a4db3bb479abc75d5fc51",
+    "utils.py": "d3344f30f63125c028b7d62e7038e0ca88b2fc618655f6b594c4489ee60aeb68",
+    "agent.py": "623d234aa738ad3f1952e34b1e87369abfa2f125fa47f4f3019d54a2437611a1",
+    "shapecheck.py": "dee9b7f4601d13cdfbdf3708754abc62ff255745cbe3d59c035efaf565ff87a5",
+    "train.py": "623d234aa738ad3f1952e34b1e87369abfa2f125fa47f4f3019d54a2437611a1",
+    "mixer_ablation/selector.py": "34c6db9792d756bd1e03627a6d5afaadc219448e5a2ed9abe280b4cc5c2551c3",
+    "mixer_ablation/__init__.py": "b018ed956356d10cde937dd53a643f0ff6dfd82f0cbe21b532df36a30d5f0e38",
+    "mixer_ablation/test_selector_training.py": "b5ad0505b5700f2a5f6f476234a97dd2c52d3de0a7b2f1344b64ba82ab1693c0",
+    "mixer_ablation/test_evaluate.py": "a8d57dfb32ff0cbaf9bedfc5bc41b8093d97824e88504e4718a3a22c9d963e33",
+    "mixer_ablation/evaluate.py": "c76c903c86389163fab8116994691b3f9f859449c2ea984d21276c0f399098b6",
+    "mixer_ablation/train_upper.py": "80a136bc0fc2d7436c5e0837c29bba025a2daada9b641678985ca0a3aba44fab",
+    "tsc_repaired/task_protocol_v2.py": "8f623f8bcb8da7653fe5519352b0b6f0f65f9971e3d72e8d14d98c6c897a2dd9",
+    "tsc_repaired/task_selector.py": "bbf4ffe27a96a785ebc6139177f5e6a866f05736381964256b2ab6fc0d974fce",
+    "tsc_repaired/source_library.py": "853b7cafd3b01cfb6d6e2d77b869da0beb3b5aed872f5fceeba8cfbaed609089",
+    "tsc_repaired/test_task_selector.py": "0d6b42f4b4cb9c8994bda77af1ad77c0cc77e02f97a19772de4277e2b0363747",
+    "tsc_repaired/config.py": "10980f614ae096fe2ff11d82a1f69596420b8c4b07e63c9bb6d4088b1da41858",
+    "tsc_repaired/rollout_evaluate.py": "8bd41e1fde82037e66afb80dcb2ef28ba09223bbb022c6225bb047b18adc629f",
+    "tsc_repaired/__init__.py": "0b77bfbdb0c01b937a7a316e4d02173a5a56d542b7e367b5b3eb52df8c770955",
+    "tsc_repaired/features.py": "84b245eca093fe2e4a77292dff8f829fbe78ebd88e8fdf52994357a8c9a0a656",
+    "tsc_repaired/train_sources_v2.py": "79931f9ffb373f0200012e40bd5c6ab23674fc9229cf77f522e2007ec5e69649",
+    "tsc_repaired/test_traffic_runtime.py": "2a97c75aead62936f55d6d544ceec53fd8b44551cdbf878d7fc3a2c8e8b0b73a",
+    "tsc_repaired/test_rollout_evaluate.py": "3af4f5286223b969505498a924174f97e1a2f9b1ffd8e8d1e476d620a710c338",
+    "tsc_repaired/conditional_sf.py": "ef804332d3ba2f66ec9e3fa87e9521f57ea5753c87eed90bcf912a6a63136f0e",
+    "tsc_repaired/source_policy.py": "d7606a8afa33b08d5877c98448e8a706eb8f071d28eaf404f8b5a88d3dee6791",
+    "tsc_repaired/test_train_sources_v2.py": "3516c7481971b7c7ad1e9ab6cdda88a3c5e9693aff6c1b554e58a906c4770efc",
+    "tsc_repaired/scenario.py": "593690a11596b9e681188092bedfdd5d31a620d998cc406d9e544861cc60b835",
+    "tsc_repaired/test_source_sf.py": "ec6a591be3727766ea73a7d79574cf68760bab78b298c8607ad7cea258174cd7",
+    "tsc_repaired/topology.py": "bf6634d15f43d606889269d08888b2650bb1d59543255fd58bf5f09838fcd387",
+    "tsc_repaired/collect_task_reference.py": "a58139117f565d6da93c12e244db60c03b36816852ddff1587e0d618b0e16511",
+    "tsc_repaired/resources.py": "5acb100db9107ac11b86aaee4e04178071ff1bed83985a62b8449644545a01ee",
+    "tsc_repaired/test_resources_v2.py": "d44488c246b10c4f51bd3b1085e379e676a968a50a774aad4bb1dc3d12b8529a",
+    "tsc_repaired/train_online_upper.py": "7eb4dfe709d5717fbdf16534cfbf9846fd8edfe499ad1ce9d90bd9b977173a33",
+    "tsc_repaired/test_task_protocol_v2.py": "ecd0d8c193ddb5aa21376f5299f1755b1cf84b57ea82396ce80f06b70728bc31",
+    "tsc_repaired/traffic_runtime.py": "3302a173b115cb91dddde504ce2ff5aa24ffaeb3df43a6fcbacf089e29fe0609",
+    "tsc_repaired/task_sf.py": "041cf991530d4be26fd3587751c526938e229f6bea1b3a11bc9c68c78b04a27f",
+    "tsc_repaired/train_task_sf.py": "44f4771ef25966d9d7b46800d9f2647045f95c5f2fcf1f903416679580457dce",
+    "tsc_repaired/test_task_sf.py": "5816e23b9ebc62cc0b3c3b6177b36e3504f207c809c284164c2dadf847f181ef",
+    "development_followup/train_budget.py": "c907ea81f6e879ea190eed9fdcf28d85ae358a4255bce2fc9491eb2306d66f85",
+    "development_followup/__init__.py": "d945653ce47eec0f67c2d1a5ea3cec3053c24d5e045bd3777ea9338bdd08134a",
+    "development_followup/test_train_budget.py": "4d847987fdb6b2e599badfe506159acc90f8db52a4e4d54decd3163bc2a0edf8",
+    "paper_aligned_followup/test_legacy_tasks.py": "b1c3dd36a161b1d2947d594588051e2355d0f75f3ad1ba74a575b6cfcd0ce820",
+    "paper_aligned_followup/__init__.py": "28a362949b3ea06be4e58823ed8e638f65babc1c0ecfd4418b7b16c80f291251",
+    "paper_aligned_followup/test_evaluate.py": "98d580a0de6d39584305730f91c876b575db1ac0af6b81b0796f721d447b91af",
+    "paper_aligned_followup/legacy_tasks.py": "3aba468edc8395a18fd2a73019e892963954fab5a4a6322109412c47203f595b",
+    "paper_aligned_followup/evaluate.py": "0d83c4c8f25cacb60044cb27eb07a5b20c56022f0b9be1be457347f23f2424d2"
+  }
+}

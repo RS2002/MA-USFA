@@ -1,0 +1,36 @@
+{
+  "version": "public-toy-repair-validation-20261117",
+  "status": "PASS",
+  "python_unit_tests": 38,
+  "unit_suites": [
+    "repaired.test_evidence_ablations",
+    "repaired.test_evidence_shared_baseline",
+    "repaired.test_evidence_evaluate",
+    "repaired.test_public_release"
+  ],
+  "short_main_training": {
+    "lower_transitions": 640,
+    "upper_transitions": 640,
+    "upper_updates": 97,
+    "validation_objectives": 16,
+    "test_accessed": false,
+    "scope": "interface and optimizer smoke only, not paper evidence",
+    "guard_elapsed_seconds": 7.095976167009212,
+    "peak_worker_rss_gib": 0.2867431640625,
+    "lowest_free_disk_gib": 35.43853759765625,
+    "unit_binding_receipt_verified": true
+  },
+  "short_scratch_training": {
+    "transitions": 320,
+    "optimizer_updates": 17,
+    "validation_targets": 1,
+    "test_accessed": false,
+    "endpoint_parameters_bitwise_equal_to_audited_original_direct_path": true,
+    "guard_elapsed_seconds": 0.5627533750084694,
+    "peak_worker_rss_gib": 0.176971435546875
+  },
+  "readme_sha256": "e4411fe53ad3c8eab3dd58cf7f3f9b754b01121d80ab9a3d3fd22674512182de",
+  "plotting_validation": "Not run in the training virtualenv because matplotlib is absent; matplotlib is a declared install dependency.",
+  "scope": "All scientific training and test source files from previous runs remain unchanged; public code is repaired and self-contained.",
+  "additional_repair": "Retired legacy module CLI delegates to guarded public entry; lower reuse checks seed/budget/world/source identity; public freeze verifies upper/lower/world unit binding."
+}

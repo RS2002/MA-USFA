@@ -1,0 +1,82 @@
+[
+  {
+    "claim": "在每个正κ超过三个固定组合规则（all-32均值）",
+    "status": "supported_by_test_means",
+    "observed_higher_cells": 12,
+    "total_cells": 12,
+    "smallest_mean_difference": 0.49879271904565675,
+    "interpretation": "只判定所声明均值排序是否保持，不作显著性或普适安全判断"
+  },
+  {
+    "claim": "在每个正κ超过三个固定组合规则（Overlap均值）",
+    "status": "partially_supported_by_test_means",
+    "observed_higher_cells": 5,
+    "total_cells": 12,
+    "smallest_mean_difference": -1.5284503376731644,
+    "interpretation": "只判定所声明均值排序是否保持，不作显著性或普适安全判断"
+  },
+  {
+    "claim": "上层学习的增益",
+    "status": "not_supported_by_test_means",
+    "observed_higher_cells": 0,
+    "total_cells": 5,
+    "smallest_mean_difference": -0.5584337801538956,
+    "interpretation": "跨五个κ的平均回报差为-0.440267；完整逐κ及逐种子差值见CSV"
+  },
+  {
+    "claim": "跨token attention交换的增益",
+    "status": "mixed_across_kappas",
+    "observed_higher_cells": 1,
+    "total_cells": 5,
+    "smallest_mean_difference": -0.2285113361455706,
+    "interpretation": "跨五个κ的平均回报差为-0.080730；完整逐κ及逐种子差值见CSV"
+  },
+  {
+    "claim": "下层队友任务条件的增益",
+    "status": "mixed_across_kappas",
+    "observed_higher_cells": 3,
+    "total_cells": 5,
+    "smallest_mean_difference": -0.062010516201121156,
+    "interpretation": "跨五个κ的平均回报差为+0.174264；完整逐κ及逐种子差值见CSV"
+  },
+  {
+    "claim": "SF候选基础分数的增益",
+    "status": "supported_at_all_tested_kappas",
+    "observed_higher_cells": 5,
+    "total_cells": 5,
+    "smallest_mean_difference": 5.531205780302481,
+    "interpretation": "跨五个κ的平均回报差为+6.833966；完整逐κ及逐种子差值见CSV"
+  },
+  {
+    "claim": "相同上层预算下优于共享任务条件DDQN",
+    "status": "supported_at_all_tested_kappas",
+    "observed_higher_cells": 5,
+    "total_cells": 5,
+    "smallest_mean_difference": 3.3856820580050533,
+    "interpretation": "跨五个κ的平均回报差为+4.407060；完整逐κ及逐种子差值见CSV"
+  },
+  {
+    "claim": "相同lower+upper transition总预算下优于共享任务条件DDQN",
+    "status": "supported_at_all_tested_kappas",
+    "observed_higher_cells": 5,
+    "total_cells": 5,
+    "smallest_mean_difference": 0.9340790439173119,
+    "interpretation": "跨五个κ的平均回报差为+1.980093；完整逐κ及逐种子差值见CSV"
+  },
+  {
+    "claim": "Distinct目标组相对primitive Independent的排序",
+    "status": "mixed_or_independent_higher",
+    "observed_higher_cells": 0,
+    "total_cells": 4,
+    "smallest_mean_difference": -1.091427181063311,
+    "interpretation": "保留组间差异，不能由all-32均值推断每个目标组均领先"
+  },
+  {
+    "claim": "接近逐目标从头重训性能",
+    "status": "not_evaluated_on_independent_test",
+    "observed_higher_cells": null,
+    "total_cells": null,
+    "smallest_mean_difference": null,
+    "interpretation": "当前test没有逐test目标重训模型；旧validation的逐目标重训结果仅作原验证分析，不移作test参照"
+  }
+]

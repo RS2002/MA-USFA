@@ -1,0 +1,89 @@
+{
+  "version": "synthetic-public-repair-v1",
+  "audited_modules": {
+    "legacy_world.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/legacy_world.py",
+      "audited_source_sha256": "fee40b31f22ee56d978b61e7f184f310da1979df259b405419c20768a16d91d0"
+    },
+    "exact.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/exact.py",
+      "audited_source_sha256": "fb79976b398f488f61a68fcd29892a60fb085136cc86ceef3cdfc5f74d7a4693"
+    },
+    "task_protocol.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/task_protocol.py",
+      "audited_source_sha256": "294118415c1d45f27765c6a1c08f168d0da34acba4548d61e6dea5783e320c83"
+    },
+    "paper_aligned_lower.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/paper_aligned_lower.py",
+      "audited_source_sha256": "f86eba25786dcb18bd4fd50c34756775af588420a7e58562473c7406844b5a23"
+    },
+    "paper_aligned_attention.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/paper_aligned_attention.py",
+      "audited_source_sha256": "28afd1cc097707a084bcff2bc254dabc122e495bd6b1a38a68e98a1ffe445401"
+    },
+    "paper_aligned_run.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/paper_aligned_run.py",
+      "audited_source_sha256": "723aab384e75d2b2cfcd4b317709b9c02d563c049e39fee238f7e8832b4e7207"
+    },
+    "evidence_ablations.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/evidence_ablations.py",
+      "audited_source_sha256": "59eaeb6c9bf82d1949bc3e3d75967beca47b3a72daec06fdd67a4e3c551daf52"
+    },
+    "evidence_shared_baseline.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/evidence_shared_baseline.py",
+      "audited_source_sha256": "5cd26255d3e13ccb60854a02f7b439c73b654eb9335f172f2d7e412c3bb3ad9d"
+    },
+    "evidence_evaluate.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/evidence_evaluate.py",
+      "audited_source_sha256": "18d92afa04b5adb699aeeaaa58622f28cd92c258653168455e2023702016895a"
+    },
+    "scratch_learning.py": {
+      "audited_source": "rebuttal_20261106/code/ma_usfa_rebuttal/learning.py (direct-only extraction) and paper_aligned_retrain.py (SweepConfig)",
+      "audited_source_sha256": "982d0370483308699f5315e76a56279facfbc125817b33205e3214154ee09767"
+    }
+  },
+  "public_changes": [
+    "relative package root for evaluation",
+    "extract only shared learning helpers",
+    "accurately label mode=ppo as single-trajectory surrogate",
+    "public guarded CLI with non-overwrite and test freezing",
+    "reject direct API overwrite of upper/lower checkpoints",
+    "validation-only direct scratch baseline extracted with no source-conditioned roles",
+    "36 meaningful numerical and evidence-integrity contract tests",
+    "retire alternative legacy module CLI in favor of guarded public entry",
+    "validate reused lower seed/world/budget/source identity",
+    "bind new upper and lower checkpoints to coupling/seed/protocol in per-unit receipt"
+  ],
+  "historical_results": "Previous toy/results JSON, figures and tables are moved out of the public release into the complete provenance backup; repaired entry points never consume them.",
+  "current_public_sha256": {
+    "library.py": "45a0f99f5fe4eda56e4807c1f9fec03887ecb9c96830a7151bbfd8297e93c3b9",
+    "run_retrain.py": "21dcf63d803c3e44cd8c81e56eed8632527cbb89f3b008dea74b95263ca40d08",
+    "make_figs.py": "80e4a566bd2d93fbade5be432ba6b69f379b9946525779ea0c9b80c54837ebb8",
+    "run_toy.py": "0e5d1476fbc138df18bae652ee18b985c3ae352105bc78c2e38ea0d24010768e",
+    "run_crossover.py": "858dca03670b7f79f0d396fd707b292649967d77b95a8f80466d6c2f77a6b600",
+    "run_crossover_ckpt.py": "d6763d2c9fbdc76dddb58b8ae7e7e7d85a786f1acec3e49895b3121c37fce546",
+    "gate.py": "e19f502410f3a1505f0e66bed6fc427f1a016341a5e4223f5a9c9e7d8db04f0b",
+    "sf_learn.py": "f5cf518bcb46e76cf4004e78cf422280e10f35dec16b706e93c15fedd636bfef",
+    "sfworld.py": "4697de15a7e3a98b79370f62692802633994c11bd423b8498361ed723f6793e7",
+    "run_extend.py": "7aa5c3897641eea6b8b7cffbaf3c9a070e6b72717dbe177a7b4681cf39ff188a",
+    "composers.py": "7361df584e0d3508e7d4ff2c72a7f85c9cdee164482b8fffc9580b52706f6d45",
+    "repaired/paper_aligned_run.py": "abc6b24a0fc682126fee61b6214bc5d85e2b97b337087d244ed7099fac74f0c7",
+    "repaired/task_protocol.py": "294118415c1d45f27765c6a1c08f168d0da34acba4548d61e6dea5783e320c83",
+    "repaired/test_evidence_evaluate.py": "3147231bfc4a65c153c6b488bb01290a1374bccd874ae05941dcbfdc9c50e123",
+    "repaired/evidence_ablations.py": "59eaeb6c9bf82d1949bc3e3d75967beca47b3a72daec06fdd67a4e3c551daf52",
+    "repaired/paper_aligned_lower.py": "d88a1564fb1d76add20439684d96702705e818f3eacc95a3cda6939736396fd1",
+    "repaired/evidence_shared_baseline.py": "5cd26255d3e13ccb60854a02f7b439c73b654eb9335f172f2d7e412c3bb3ad9d",
+    "repaired/__init__.py": "d7268cf4efaf0ccf479c7ba6fe63db60d13366a85b6ab406482b8046650c5a21",
+    "repaired/public_run.py": "0b48b0f47f4d5b518e0867ba550b9cd22198ffd1d67bdcbed4b52184ddb74e14",
+    "repaired/paper_aligned_attention.py": "c02b6186a031729fd76211bd05a05296499b0501bf4fbe4aab3daf9b9d42a780",
+    "repaired/test_evidence_shared_baseline.py": "d01cf8b4941e975d9a0c8c9c888afbb8b6b0103d6f35eb8e649146ce8bfde00b",
+    "repaired/test_evidence_ablations.py": "8aeedc3c26628ad1ff52753a8cbfa32941312d1ad86cc24a9a648eba44705c6e",
+    "repaired/exact.py": "fb79976b398f488f61a68fcd29892a60fb085136cc86ceef3cdfc5f74d7a4693",
+    "repaired/evidence_evaluate.py": "9bfff114b7d959e96c3184933d026c9c0186e7d2b5644efb1668642ad1a07a0d",
+    "repaired/legacy_world.py": "fee40b31f22ee56d978b61e7f184f310da1979df259b405419c20768a16d91d0",
+    "repaired/resources.py": "4c36405426d3161ce07e2aa324484f185ab625688f3082cbb98ba0e1efee8a5d",
+    "repaired/learning.py": "9d64ade2431019282d3afe1380ba59615cc61145f0b87ab580dd12b5f326c9c6",
+    "repaired/scratch_learning.py": "049b4104468ec84bb241fc76ee424aff717ac4d9c7a7ca763b3f36e711f89a66",
+    "repaired/test_public_release.py": "6299a6f92970ca182f561cdaf6b7a597d63aa2c47944c114f5a5ef4de37cd690"
+  }
+}
